@@ -15,15 +15,27 @@
   --fw-400: 400;
   --fw-700: 700;
 
-  --clr-neutral-100: #fff;
-  --clr-neutral-200: #eef1f6;
-  --clr-neutral-300: #a9afbc;
-  --clr-neutral-400: #737b8c;
-  --clr-neutral-500: #434956;
-  --clr-neutral-900: #020203;
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-200: ;
+  --clr-neutral-300: ;
+  --clr-neutral-400: #d5d5d5;/*unselected nav item*/
+  --clr-neutral-500: ;
+  --clr-neutral-900: ;
 
-  --clr-primary-300: #f3f7ff;
-  --clr-primary-400: #8ea8da;
+  /*p {color: rgba(255, 255, 255, 0.8);} border: 10px solid rgba(255, 255, 255, .3)
+  Add white color with opacity as in Figma*/
+
+  --clr-bg-300: #242424;/*dark*/
+  --clr-bg-400: #2b2b2b;/*light*/
+  --clr-bg-500: #404040;/*masterplay bg/playlist hover/band members bg*/
+  --clr-bg-600: #1a1a1a;/*Form bg*/
+
+  --clr-accent-300: #d61a24;
+  --clr-accent-400: #e31b26;/*accent on lighter bg + NB ALL GRAPHICS on dark and light bg*/
+  --clr-accent-500: #ff8b7a;/*accent for playmaster volume up only*/
+
+  --clr-hover-primary: #bd0b15;
+  --clr-hover-secondary: #d61a24;
 
   --br: 1rem;/**/
 
