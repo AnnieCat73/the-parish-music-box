@@ -68,7 +68,7 @@
 }
 
 /*tablet*/
-@media (min-width: 40em) {
+@media (min-width: 36em) {
   :root {
     
     --fs-500: 1.625rem;
@@ -79,7 +79,7 @@
 }
 
 /*desktop*/
-@media (min-width: 40em) {
+@media (min-width: 62em) {
   :root {
     
     --fs-500: 1.875rem;
@@ -163,7 +163,7 @@ body {
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
   min-height: 100vh;/**/
-  padding: 1.5rem;/**/
+  
   color: var(--clr-neutral-100);
 }
 
@@ -215,7 +215,7 @@ h3 {
 
 
 /*desktop*/
-@media (min-width: 40em) {
+@media (min-width: 62em) {
 
   .btn {
     font-size: var(--fs-400);
@@ -239,8 +239,13 @@ section {
   margin-top: 2rem;
 }
 
+.split {
+  display: flex;
+  align-items: center;
+}
+
 /*tablet*/
-@media (min-width: 40em) {
+@media (min-width: 36em) {
   section {
     padding: 5.5rem 0;
   }
@@ -251,9 +256,61 @@ section {
 }
 
 /*desktop*/
-@media (min-width: 40em) {
+@media (min-width: 62em) {
   section {
     padding: 7.25rem;
+  }
+  
+}
+
+/*****/
+/*Header*/
+.header {
+  background-color: var(--clr-bg-400);
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+}
+
+.nav-left {
+  gap: 2em;
+}
+
+.menu-links {
+  gap: 1em;
+}
+
+.menu {
+  display: none;
+}
+
+/*mobile/tablet header*/
+.open-nav{
+  border: 0;
+  background: 0;
+  color: var(--clr-neutral-100);
+  cursor: pointer;
+  padding: 0;
+  font-size: 2em;
+  transition: all ease-in-out 2s;
+}
+
+
+
+/*tablet*/
+@media (min-width: 36em) {
+  
+}
+
+/*desktop*/
+@media (min-width: 62em) {
+  .open-nav {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
   }
   
 }
