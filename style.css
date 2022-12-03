@@ -3,17 +3,27 @@
   --ff-serif: "Playfair Display", serif;
 
   /* small screen font-sizes */
-  --fs-200: 0.75rem;
-  --fs-300: 1rem;
-  --fs-400: 1.25rem;
-  --fs-500: 1.375rem;
-  --fs-600: 1.75rem;
-  --fs-900: 2.125rem;
 
-  --fw-200: 200;
-  --fw-300: 300;
-  --fw-400: 400;
-  --fw-700: 700;
+  --fs-100: 0.875rem;/*14px*/
+  --fs-200: 0.938rem;/*15px*/
+  --fs-300: 1rem;
+  --fs-400: 1.063rem;/*17px*/
+  --fs-500: 1.5rem;/*h3*/
+  --fs-600: 2.25rem;/*h2*/
+  --fs-700: 2.375rem;/*h1*/
+
+  --fs-heading: 2.938rem;/*lower h1 in span*/
+  --fs-label: 0.875rem;
+  --fs-label-input: 0.938rem;
+  --fs-copy: 0.875rem;
+  --fs-btn: 1rem;
+  --fs-quote: 1.188rem;/*19px -quote*/
+
+  --fw-200: 300;/*light*/
+  --fw-300: 400;/*regular*/
+  --fw-500: 500; /*medium*/
+  --fw-600: 600;/*Semibold*/
+  --fw-700: 700;/*bold*/
 
   --clr-neutral-100: #ffffff;
   --clr-neutral-200: ;
@@ -39,17 +49,49 @@
 
   --br: 1rem;/**/
 
-  --box-shadow: 0 0.25em 1.5em rgba(0, 0, 0, 0.15);/**/
+  --box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.4);/*member and masterplay*/
+
+  --spacer-xs: 0.5rem; /*8px*/
+  --spacer-s: 1rem; /*16px*/
+  --spacer-ls: 1.5rem; /*24px*/
+  --spacer-m: 2rem; /*32px*/
+  --spacer-xm: 2.5rem; /*40px*/
+  --spacer-sl: 3rem; /*48px*/
+  --spacer-l: 4.5rem; /*56px*/
+  --spacer-xl: 4rem; /*64px*/
+  --spacer-xxl: 4.5rem; /*72px*/
+  --spacer-xxxl: 5rem; /*80px*/
+  --spacer-xxxxl: 5.5rem; /*88px*/
+  --spacer-xxxxxl: 7.25rem; /*116px*/
+
+
 }
 
-
+/*tablet*/
 @media (min-width: 40em) {
   :root {
-    --fs-500: 1.75rem;
-    --fs-600: 2.125rem;
-    --fs-900: 4.25rem;
+    
+    --fs-500: 1.625rem;
+    --fs-600: 2.375rem;
+    --fs-700: 3.25rem;
+    --fs-heading: 3.875rem;
   }
 }
+
+/*desktop*/
+@media (min-width: 40em) {
+  :root {
+    
+    --fs-500: 1.875rem;
+    --fs-600: 3.125rem;
+    --fs-700: 4.688rem;
+    --fs-heading: 5.75rem;
+    --fs-btn: 1.063rem;
+    --fs-quote: 1.25rem;/*quote*/
+
+  }
+}
+
 
 /* reset */
 
@@ -73,7 +115,7 @@ h3,
 .h3,
 h4,
 .h4 {
-  line-height: 1;
+  line-height: 1.2;
 }
 
 html {
@@ -117,9 +159,101 @@ select {
 }
 
 body {
-  line-height: 1.4;
+  line-height: 1.5;
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
   min-height: 100vh;/**/
   padding: 1.5rem;/**/
+  color: var(--clr-neutral-100);
+}
+
+
+/*Typography*/
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-serif);
+  font-weight: var(--fw-700);
+}
+
+h3 {
+  font-weight: var(--fw-600);
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: var(--fw-500);
+  font-size: var(--fs-300);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--clr-neutral-100);
+}
+.btn-primary {
+  background-color: var(--clr-accent-300);
+  padding: 1.25em 3.25em;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--clr-hover-primary);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--clr-neutral-100);
+  padding: 1.25em 2.3125em;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: var(--clr-hover-secondary);
+  border-color: var(--clr-hover-secondary);
+}
+
+
+/*desktop*/
+@media (min-width: 40em) {
+
+  .btn {
+    font-size: var(--fs-400);
+  }
+}
+
+
+/*General layout*/
+
+section {
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flow-content > * + * { /*about text*/
+  margin-top: 2rem;
+}
+
+/*tablet*/
+@media (min-width: 40em) {
+  section {
+    padding: 5.5rem 0;
+  }
+
+  .flow-content > * + * { /*about text*/
+    margin-top: 1.5rem;
+  }
+}
+
+/*desktop*/
+@media (min-width: 40em) {
+  section {
+    padding: 7.25rem;
+  }
+  
 }
