@@ -26,10 +26,10 @@
   --fw-700: 700;/*bold*/
 
   --clr-neutral-100: #ffffff;
-  --clr-neutral-200: ;
+  --clr-neutral-200:;
   --clr-neutral-300: ;
   --clr-neutral-400: #d5d5d5;/*unselected nav item*/
-  --clr-neutral-500: ;
+  --clr-neutral-500:  #2d2d2d;/*hr*/
   --clr-neutral-900: ;
 
   /*p {color: rgba(255, 255, 255, 0.8);} border: 10px solid rgba(255, 255, 255, .3)
@@ -181,6 +181,10 @@ h3 {
   font-weight: var(--fw-600);
 }
 
+.text-400 {
+  font-size: var(--fs-500);
+}
+
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -268,7 +272,7 @@ section {
 .header {
   background-color: var(--clr-bg-400);
   justify-content: space-between;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   width: 100%;
 }
 
@@ -295,11 +299,67 @@ section {
   transition: all ease-in-out 2s;
 }
 
+.menu-inside {
+  position: fixed;
+  background: var(--clr-bg-300);
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  transform: translateX(0);
+  transition: transform 250ms; 
+  height: 100%;
+  padding: 0 2rem;
+}
 
+.close-nav {
+  border: 0;
+  background: 0;
+  color: var(--clr-neutral-100);
+  cursor: pointer;
+  font-size: 3em;
+  font-weight: var(--fw-300);
+  transition: linear .2s;
+  margin: 0;
+}
 
+.close-nav:hover,
+.close-nav:focus {
+  opacity: 0.5;
+}
+
+.list-inside li {
+  padding: 1rem 0;
+}
+.nav-link {
+  
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-300);
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+
+.nav-line {
+  border: none;
+  height: 1.5px;
+  background-color: var(--clr-neutral-500);
+}
+
+/*javascript class to toggle*/
+.navigation-open {
+  transform: translateX(-100%);
+}
 /*tablet*/
 @media (min-width: 36em) {
-  
+  .nav-link {
+    font-size: var(--fs-400);
+  }
+
+  .list-inside li {
+    padding: 1.5rem 0;
+  }
 }
 
 /*desktop*/
