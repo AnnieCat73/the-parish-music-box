@@ -459,12 +459,42 @@ section {
   background-color: var(--clr-bg-300);
   display: flex;
   flex-direction: column-reverse;
-  
-
 }
 
+
+.left-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  order: 3;
+  padding: 1.5rem 1.5rem;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: space-around;
+  order: 2;
+  padding: 1.5rem 1.5rem;
+  gap: 1rem;
+}
+
+
+
 /*tablet*/
-@media (min-width: 36em) {
+
+@media (max-width: 24em) {
+  .btn-primary {
+    padding: 0.8em 2em;
+  }
+
+  .btn-secondary {
+    padding: 0.8em 1.3em;
+  }
+}
+
+@media (min-width: 40em) {
   .hero {
     flex-direction: row;
     justify-content: space-between;
