@@ -13,7 +13,7 @@
   --fs-600: 2.25rem;/*h2*/
   --fs-700: 2.375rem;/*h1*/
 
-  --fs-heading: 2.938rem;/*lower h1 in span*/
+  --fs-heading: 2.6rem;/*lower h1 in span*/
   --fs-label: 0.875rem;
   --fs-label-input: 0.938rem;
   --fs-copy: 0.875rem;
@@ -74,8 +74,14 @@
     
     --fs-500: 1.625rem;
     --fs-600: 2.375rem;
+   
+  }
+}
+
+@media (min-width: 42.875em) {
+  :root {
     --fs-700: 3.25rem;
-    --fs-heading: 3.875rem;
+    --fs-heading: 3.5rem;
   }
 }
 
@@ -148,7 +154,7 @@ svg,
 video {
   display: block;
   max-width: 100%;
-  /*height: auto;*/
+  height: auto;
 }
 
 
@@ -193,7 +199,7 @@ h1 {
 }
 
 h1 span {
-  font-size: 2.938rem;
+  font-size: var(--fs-heading);
   line-height: 1;
 }
 
@@ -219,7 +225,7 @@ h3 {
 }
 .btn-primary {
   background-color: var(--clr-accent-300);
-  padding: 0.8em 3em;
+  padding: 0.625em 3em;
 }
 
 .btn-primary:hover,
@@ -230,7 +236,7 @@ h3 {
 .btn-secondary {
   background-color: transparent;
   border: 1px solid var(--clr-neutral-100);
-  padding: 0.8em 2.3em;
+  padding: 0.625em 2.3em;
 }
 
 .btn-secondary:hover,
@@ -241,10 +247,7 @@ h3 {
 
 /*tablet*/
 @media (min-width: 36em) {
-  h1 span {
-    font-size: 3.875rem;
-    
-  }
+  
   
 }
 
@@ -267,10 +270,15 @@ section {
   padding: 3rem 0;
 }
 
+section:nth-child(2) {
+  padding: 1rem 0;
+}
+
 .container {
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+  outline: 1px solid red;
 }
 
 .flow-content > * + * { /*about text*/
@@ -459,24 +467,17 @@ section {
 /*Hero section*/
 
 .hero {
-  
   background-color: var(--clr-bg-300);
-  
-  /*display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 19rem 15rem;*/
   padding: 0;
 }
 
 
 .left-hero {
-  grid-row: 2 / -1;
   display: flex;
   flex-direction: column-reverse;
 }
 
 h1 {
-  
   padding:  0;
 }
 
@@ -484,7 +485,6 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-self: center;
- 
   padding: 1.5rem 0;
   gap: 1rem;
 }
@@ -496,10 +496,12 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: center center;
- 
   height: 15rem;
 }
 
+.hero-right {
+  display: none;
+}
 
 @media (max-width: 24em) {
   .btn-primary {
@@ -510,70 +512,88 @@ h1 {
     padding: 0.8em 1.3em;
   }
 }
+
+
 /*tablet*/
-@media (min-width: 40em) {
-  .hero {
-    background-image: url("images/hero-img@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: center center;
+@media (min-width: 36em) {
  
-    height: 15rem;
-    background-size: 60%;
-    background-position: right 0px ;
-    height: 30rem;
-    
-   
-    padding: 0;
-    
-    
+  .hero .container {
+    display: grid;
+    grid-template-columns: auto 5rem 1fr;
   }
 
+ 
+  .hero-right {
+    grid-column: 2 / 4;
+    grid-row: 1 /2;
+    align-self: start;
+    display: flex;
+    aspect-ratio: 4 / 3;
+  }
+
+  .hero-right .img  {
+    width: 0;
+    height: 0rem;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+  }
+  
   .hero-img {
     display: none;
   }
 
   .left-hero {
-    grid-column: 2 / 4;
-    grid-row: 1;
+    grid-column: 1 / 3;
+    grid-row: 1 /2;
     align-self: start;
     flex-direction: column;
-    gap: 4em;
+    gap: 2em;
     z-index: 1;
     justify-self: start;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
   }
-
-  h1 {
-   
-    
-    
-    
-  }
-
-  h1 span {
-    
-  }
-  
 
   .hero-btns {
     flex-direction: column;
     margin-right: auto;
-    
+    gap: 1.5em;
     align-items: flex-start;
-    grid-column: 2 /4;
-   
-    
   }
   
 }
 
+@media (min-width: 44em) {
+  .left-hero {
+    gap: 2em;
+    padding-top: 3rem;
+  }
+}
+@media (min-width: 52em) {
+  .left-hero {
+    align-self: start;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-self: start;
+  }
+}
 
 /*desktop*/
 @media (min-width: 62em) {
-  .hero {
-    grid-template-rows: 42rem;
+
+  .hero .container {
+    grid-template-columns: auto 3rem 1fr;
   }
+  
+  .left-hero {
+    align-self: center;
+    gap: 3em;
+  }
+  .hero-btns {
+    gap: 1em;
+    flex-direction: row;
+  }
+  
 }
 
 
@@ -586,6 +606,7 @@ h1 {
 @media (min-width: 36em) {
   .masterplay {
     background-color: var(--clr-bg-400);
+    
   }
   
   .master-play {
@@ -593,7 +614,6 @@ h1 {
     align-items: center;
     color: #fff;
     width: 40%;
-   
   }
   
   .master-title {
