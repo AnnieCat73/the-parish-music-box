@@ -164,7 +164,7 @@ body {
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
   min-height: 100vh;/**/
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: var(--ff-sans);
   color: var(--clr-neutral-100);
 }
 
@@ -459,10 +459,12 @@ section {
 /*Hero section*/
 
 .hero {
+  
   background-color: var(--clr-bg-300);
-  display: grid;
+  
+  /*display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 19rem 15rem;
+  grid-template-rows: 19rem 15rem;*/
   padding: 0;
 }
 
@@ -487,13 +489,15 @@ h1 {
   gap: 1rem;
 }
 
+
+
 .hero-img {
-  background-image: url("images/hero-img@2x.jpg");
+  background-image: url("images/hero-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-image: center center;
-  grid-row: 1 / 2;
-  grid-column: 1;
+ 
+  height: 15rem;
 }
 
 
@@ -509,13 +513,24 @@ h1 {
 /*tablet*/
 @media (min-width: 40em) {
   .hero {
+    background-image: url("images/hero-img@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: center center;
+ 
+    height: 15rem;
+    background-size: 60%;
+    background-position: right 0px ;
+    height: 30rem;
     
-    
-    grid-template-columns: 1fr 35% 20% 40%;
-    grid-template-rows: 30rem;
+   
     padding: 0;
     
     
+  }
+
+  .hero-img {
+    display: none;
   }
 
   .left-hero {
@@ -539,16 +554,7 @@ h1 {
   h1 span {
     
   }
-
-  .hero-img  {
-    grid-column: 3 / 5;
-    grid-row: 1;
-    /*width: 40rem;*/
   
-    
-   
-    
-  }
 
   .hero-btns {
     flex-direction: column;
@@ -565,6 +571,173 @@ h1 {
 
 /*desktop*/
 @media (min-width: 62em) {
+  .hero {
+    grid-template-rows: 42rem;
+  }
+}
 
+
+/*Masterplay*/
+
+.master-play {
+  display: none;
+}
+
+@media (min-width: 36em) {
+  .masterplay {
+    background-color: var(--clr-bg-400);
+  }
+  
+  .master-play {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 40%;
+   
+  }
+  
+  .master-title {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .master-title h4 {
+    font-size: 13px;
+  }
+  
+  .master-play .subtitle{
+    font-size: 11px;
+    color: #4c5262;
+  }
+  .master-play .icon{
+    font-size: 20px;
+    color: #fff;
+    margin: 0px 20px 0px 40px;
+    display: flex;/**/
+  }
+  .master-play .icon .bi{
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgb(105, 105, 170, .1);
+    border-radius: 50%;
+    padding: 1px 3px 0px 6px;
+    margin: 0px 5px;
+    transition: .3s linear;
+  }
+  
+  .master-play span {
+    color: #fff;
+    width: 32px;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .master-play #currentStart {
+    margin: 0px 0px 0px 20px;
+  }
+  
+  .master-play .bar {
+    position: relative;
+    width: 43%;
+    height: 2px;
+    background: rgb(105, 105, 170, .1);
+    margin: 0px 15px 0px 10px;
+  }
+  .master-play .bar .bar2 {
+    position: absolute;
+    background: #36e2ec;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    transition: 1s linear;
+  }
+  .master-play .bar .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #36e2ec;
+    border-radius: 50%;
+    left: 0%;
+    top: -1px;
+    transition: 1s linear;
+  }
+  .master-play .bar .dot::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #36e2ec;
+    border-radius: 50px;
+    left: -6px;
+    top: -6px;
+    box-shadow: inset 0px 0px 3px #36e2ec;
+  }/**/
+  .master-play .bar input {
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    left: 0;
+    cursor: pointer;
+    z-index: 9999999;
+    transition: 3s linear;/*1s also*/
+    opacity: 0;
+  }
+  .master-play .vol {
+    position: relative;
+    width: 100px;
+    height: 2px;
+    margin-left: 50px;
+    background: rgb(105, 105, 170, .1);
+    
+  }
+  .master-play .vol .bi {
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    top: -11px;
+    left: -30px;
+  }
+  
+  .master-play .vol input {
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999999;
+    transition: 3s linear;/*1s also*/
+    opacity: 0;
+  }
+  
+  .master-play .vol .vol-bar {
+    position: absolute;
+    background: #36e2ec;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    transition: 1s linear;
+  }
+  .master-play .vol .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #36e2ec;
+    border-radius: 50%;
+    left: 0%;
+    top: -1px;
+    transition: 1s linear;
+  }
+  .master-play .vol .dot::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #36e2ec;
+    border-radius: 50px;
+    left: -6px;
+    top: -6px;
+    box-shadow: inset 0px 0px 3px #36e2ec;
+  }
+  
+  
 }
 

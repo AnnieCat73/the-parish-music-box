@@ -88,20 +88,45 @@
 
     <main>
       <!--Hero section-->
+
       <section class="hero">
-        <div class="left-hero">
-          <h1>The Parish <br /><span> Music Box</span></h1>
-          <div class="hero-btns">
-            <a href="#" class="btn btn-primary">Book us</a>
-            <a href="#" class="btn btn-secondary">See us live</a>
+        <div class="hero-img"></div>
+        <div class="container">
+          <div class="left-hero">
+            <h1>The Parish <br /><span> Music Box</span></h1>
+            <div class="hero-btns">
+              <a href="#" class="btn btn-primary">Book us</a>
+              <a href="#" class="btn btn-secondary">See us live</a>
+            </div>
           </div>
         </div>
+      </section>
+      <!--Masterplay-->
+      <section class="masterplay">
+        <div class="container">
+          <div class="master-play">
+            <div class="master-title">
+              <h4>On My Way</h4>
+              <p class="subtitle">Cat</p>
+            </div>
+            <div class="icon">
+              <i class="bi bi-play-fill" id="masterPlay"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+              <input type="range" id="seek" min="0" value="0" max="100" />
+              <div class="bar2" id="bar2"></div>
+              <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:00</span>
 
-        <div class="hero-img">
-          <!---<img
-            src="images/hero-img@3x.jpg"
-            alt="The Parish Music Box playing live"
-          />-->
+            <div class="vol">
+              <i class="bi bi-volume-down-fill" id="vol-icon"></i>
+              <input type="range" id="vol" min="0" value="30" max="100" />
+              <div class="vol-bar"></div>
+              <div class="dot" id="vol-dot"></div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
