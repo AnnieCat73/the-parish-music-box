@@ -612,8 +612,9 @@ h1 {
   .master-play {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: #fff;
-    width: 40%;
+    width: 100%;
   }
   
   .master-title {
@@ -621,18 +622,18 @@ h1 {
     flex-direction: column;
   }
   
-  .master-title h4 {
-    font-size: 13px;
+  .master-title p {
+    font-size: var(--fs-200);
   }
   
   .master-play .subtitle{
-    font-size: 11px;
-    color: #4c5262;
+    font-size: var(--fs-100);
+    opacity: 0.7;
   }
   .master-play .icon{
     font-size: 20px;
     color: #fff;
-    margin: 0px 20px 0px 40px;
+    margin: 0px 0px 0px 0px;
     display: flex;/**/
   }
   .master-play .icon .bi{
@@ -641,7 +642,7 @@ h1 {
     border: 1px solid rgb(105, 105, 170, .1);
     border-radius: 50%;
     padding: 1px 3px 0px 6px;
-    margin: 0px 5px;
+    margin: 0px 0px;
     transition: .3s linear;
   }
   
@@ -652,12 +653,12 @@ h1 {
     font-weight: 400;
   }
   .master-play #currentStart {
-    margin: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 0px;
   }
   
   .master-play .bar {
     position: relative;
-    width: 43%;
+    width: 25%;
     height: 2px;
     background: rgb(105, 105, 170, .1);
     margin: 0px 15px 0px 10px;
@@ -687,8 +688,8 @@ h1 {
     height: 15px;
     border: 1px solid #36e2ec;
     border-radius: 50px;
-    left: -6px;
-    top: -6px;
+    left: -5px;
+    top: -5px;
     box-shadow: inset 0px 0px 3px #36e2ec;
   }/**/
   .master-play .bar input {
@@ -703,9 +704,9 @@ h1 {
   }
   .master-play .vol {
     position: relative;
-    width: 100px;
+    width: 70px;
     height: 2px;
-    margin-left: 50px;
+    margin-left: 10px;
     background: rgb(105, 105, 170, .1);
     
   }
@@ -713,7 +714,7 @@ h1 {
     position: absolute;
     color: #fff;
     font-size: 25px;
-    top: -11px;
+    top: -16px;
     left: -30px;
   }
   
@@ -753,8 +754,8 @@ h1 {
     height: 15px;
     border: 1px solid #36e2ec;
     border-radius: 50px;
-    left: -6px;
-    top: -6px;
+    left: -5px;
+    top: -5px;
     box-shadow: inset 0px 0px 3px #36e2ec;
   }
   

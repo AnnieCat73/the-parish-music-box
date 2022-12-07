@@ -12,3 +12,5 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   navMenu.classList.toggle("navigation-open");
 });
+
+//Masterplay
