@@ -208,7 +208,7 @@ h3 {
 }
 
 .text-400 {
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
 }
 
 .btn {
@@ -273,7 +273,11 @@ section:nth-child(1) {
 }
 
 section:nth-child(2) {
-  padding: 1.5rem 0;
+  padding: 0;
+}
+
+section:nth-child(3) {
+  padding: 1.5rem 0 0 0;
 }
 
 .container {
@@ -282,8 +286,6 @@ section:nth-child(2) {
   padding: 0 1.5rem;
   /*outline: 1px solid red;*/
 }
-
-
 
 .flow-content > * + * { /*about text*/
   margin-top: 2rem;
@@ -297,6 +299,10 @@ section:nth-child(2) {
 /*tablet*/
 @media (min-width: 36em) {
   section {
+    padding: 5.5rem 0;
+  }
+
+  section:nth-child(2) {
     padding: 5.5rem 0;
   }
 
@@ -781,3 +787,24 @@ h1 {
   
 }
 
+/*About*/
+
+.about {
+  background-color: var(--clr-bg-300);
+}
+
+.about-tablet,
+.about-desktop {
+  display:  none;
+}
+
+@media (min-width: 36em) {
+  .about-tablet {
+  display:  block;
+}
+}
+@media (min-width: 62em) {
+  .about-desktop {
+    display:  block;
+}
+}
