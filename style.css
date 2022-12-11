@@ -182,10 +182,21 @@ body {
 h1,
 h2,
 h3 {
+ 
   font-family: var(--ff-serif);
   font-weight: var(--fw-700);
 }
 
+h1 {
+  font-size: var(--fs-700);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+h1 span {
+  font-size: var(--fs-heading);
+  line-height: 1;
+}
 
 h2 {
   line-height: 1.2;
@@ -204,16 +215,7 @@ h2::before {
   top: -32px;
 }
 
-h1 {
-  font-size: var(--fs-700);
-  line-height: 1;
-  letter-spacing: -2px;
-}
 
-h1 span {
-  font-size: var(--fs-heading);
-  line-height: 1;
-}
 
 h3 {
   font-weight: var(--fw-600);
@@ -539,7 +541,7 @@ h1 {
  
 }
 
-.hero-img {
+.right-img {
   display: none;
 }
 
@@ -851,18 +853,18 @@ h1 {
   display:  none;
 }
 
-figure {
+.about-img {
   display: flex;
   flex-direction: column-reverse;
   gap: 3em;
 }
 
-figure img {
+.about-img img {
   object-fit: cover;
  
 }
 
-figure figcaption {
+.about-img figcaption {
   font-family: var(--ff-serif);
   font-size: var(--fs-450);
   font-style: italic;
@@ -872,7 +874,7 @@ figure figcaption {
   margin: 0 auto;
 }
 
-figure figcaption::before {
+.about-img figcaption::before {
   content: "";
   background-image: url(images/quote.svg);
   background-repeat: no-repeat;
@@ -883,9 +885,7 @@ figure figcaption::before {
   left: -28px;
 }
 
-figure span {
-  display: none;
-}
+
 
 @media (min-width: 36em) {
   .about-tablet {
@@ -901,21 +901,21 @@ figure span {
     gap: 3em;
   }
 
-  figure {
+  .about-img {
     flex-direction: column;
     gap: 3em;
     
   }
   
 
-  figure figcaption {
+  .about-img figcaption {
     max-width: 85%;
     margin: 0 auto;
     position: relative;
     padding-bottom: 2rem;
   }
 
-  figure figcaption::after {
+  .about-img figcaption::after {
     content: "- A Fleet Street scribe";
     font-family: var(--ff-sans);
     font-size: var(--fs-100);
@@ -928,7 +928,7 @@ figure span {
 }
 
 @media (min-width: 39.125em) and (max-width: 49.9em){
-  figure img {
+  .about-img img {
     max-width: 75%;
     margin: 0 auto;
   }
@@ -951,7 +951,7 @@ figure span {
     justify-content: space-between;
    
   }
-  figure {
+  .about-img {
     order: 1;
     align-self: center;
     /*margin-top: -1.875rem;*/
@@ -962,7 +962,7 @@ figure span {
     order: 5;
   }
 
-  figure img {
+  .about-img img {
     
     max-width: 100%;
     height: 24rem;
@@ -1019,3 +1019,234 @@ figure span {
   }
 
 }
+
+
+/*/STREAMING//*/
+
+.streaming {
+  background-color: var(--clr-bg-300);
+}
+
+.section-heading {
+  display: flex;
+  gap: 2em;
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+
+
+/*Wave*/
+.wave {
+  width: 30px;
+  height: 30px;
+  /*border: 1px solid #fff;*/
+  
+  display: flex;
+ 
+  
+
+}
+
+.wave .wave1 {
+  width: 3px;
+  height: 10px;
+  margin-right: 3px;
+  border-radius: 10px 10px 0px 0px;
+  background: #e31b26;
+  animation: unset;
+  align-self: flex-end;
+}
+
+.wave .wave1:nth-child(2) {
+  height: 13px;
+  /*animation-delay: .4s;*/
+}
+
+.wave .wave1:nth-child(3) {
+  height: 8px;
+  /*animation-delay: .8s;*/
+}
+
+.streaming {
+  width: 100%;
+}
+
+.playlist {
+  
+}
+
+.playlist-heading {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+.album-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.playlist .song-list {
+  justify-content: space-between;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 36em) and (max-width: 61em) {
+  .playlist .song-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+}
+
+.playlist .song-list li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr auto;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.playlist .song-list li:first-child {
+  border-top: 1px solid #ddd;
+}
+
+
+.playlist ul li.active {
+  font-weight: bold;
+}
+
+/*music player*/
+
+ .player {
+  background-color: #2b2b2b;
+  display: grid;
+  grid-template-columns: 1fr 10rem;
+  grid-template-rows: 1fr;
+  padding: 1.5rem 2.25rem;
+}
+
+.track-playing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5em;
+}
+
+.record {
+  width: 3rem;
+  border-radius: 50%;
+  margin-left: .3em
+}
+
+.record-animation {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+ 
+}
+.slidecontainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidecontainer i {
+  color: var(--clr-neutral-100);
+  font-size: 1.2rem;
+}
+
+.slider {
+  -webkit-appearance: none;
+  cursor: pointer;
+  height: 8px;
+  background: #fff;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2;
+  border-radius: 20px;
+  margin: 0 1rem;
+  width: 100%;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls > button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  
+}
+
+.controls > button > i {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+}
+
+.play-pause > i {
+  font-size: 1.5rem !important;
+}
+
+
+/*Albums*/
+
+.streaming .albums-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 1em;
+}
+
+.vinyl {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 1em;
+  justify-items: center;
+}
+
+.singles {
+  display: none;
+}
+
+@media (min-width: 36em) {
+  .vinyl {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 62em) {
+  .singles {
+    display: block;
+  }
+}
+
