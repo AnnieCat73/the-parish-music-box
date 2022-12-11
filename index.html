@@ -226,6 +226,151 @@
           </div>
         </div>
       </section>
+      <!--Streaming-->
+      <section class="streaming">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Stream it your way</h2>
+            <div class="stream-icons">
+              <a href="#"><img src="" alt="" />Spotify</a>
+              <a href="#"><img src="" alt="" />Itunes</a>
+              <a href="#"><img src="" alt="" />Apple Music</a>
+            </div>
+          </div>
+
+          <div class="playlist">
+            <div class="playlist-heading">
+              <h3>Playlist</h3>
+              <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+              </div>
+            </div>
+            <!--track list-->
+            <ul class="song-list">
+              <li
+                data-src="music/Petrocelli.MP3"
+                data-name="Petrocelli"
+                data-index="0"
+              >
+                <span>01</span>
+                <a href="#"
+                  ><img src="images/albumart.jpg" alt="" class="album-img"
+                /></a>
+                <span>Petrocelli</span>
+                <span>03.40</span>
+              </li>
+              <li
+                data-src="music/Heavy Drinkers.MP3"
+                data-name="Heavy Drinkers"
+                data-index="1"
+              >
+                <span>02</span>
+                <a href="#"
+                  ><img src="images/Expect.PNG" alt="" class="album-img"
+                /></a>
+
+                <span>Heavy Drinkers </span>
+                <span>04.19</span>
+              </li>
+              <li
+                data-src="music/Our Roman Knows.mp3"
+                data-name="Our Roman Knows"
+                data-index="2"
+              >
+                <span>03</span>
+                <a href="#"
+                  ><img src="images/albumart.jpg" alt="" class="album-img"
+                /></a>
+                <span>Our Roman Knows</span>
+                <span class="running-time">04.16</span>
+              </li>
+              <li
+                data-src="music/Our Roman Knows.mp3"
+                data-name="Our Roman Knows"
+                data-index="3"
+              >
+                <span>04</span>
+                <a href="#"
+                  ><img src="images/albumart.jpg" alt="" class="album-img"
+                /></a>
+                <span>Our Roman Knows</span>
+                <span class="running-time">04.16</span>
+              </li>
+            </ul>
+
+            <audio src="" id="audio"></audio>
+          </div>
+
+          <!--music player-->
+
+          <div class="player">
+            <div class="track-playing">
+              <img src="images/record.jpg" alt="Record" class="record" />
+              <p id="title" class="current-song">Song title</p>
+            </div>
+
+            <div class="controls-container">
+              <div class="slidecontainer">
+                <i class="fas fa-volume-down"></i>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  class="slider"
+                />
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="controls">
+                <button class="previous" id="previous">
+                  <i class="fas fa-step-backward"></i>
+                  <button class="play-pause" id="play-pause">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </button>
+                <button class="next" id="next">
+                  <i class="fas fa-step-forward"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--Albums-->
+          <div class="albums">
+            <h3>Albums</h3>
+            <div class="albums-container">
+              <div class="vinyl">
+                <figure>
+                  <img src="images/albumart.jpg" alt="" />
+                  <figcaption>
+                    Paradise is Pocket Sized <br />
+                    2010
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="images/Expect.PNG" alt="" />
+                  <figcaption>
+                    What Did We Really Expect <br />
+                    2013
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="singles">
+                <h3>Singles & Eps</h3>
+                <figure>
+                  <img src="images/Expect.PNG" alt="" />
+                  <figcaption>
+                    What Did We Really Expect <br />
+                    2013
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
