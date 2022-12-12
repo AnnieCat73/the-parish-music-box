@@ -1282,7 +1282,51 @@ h1 {
 
 .singles {
   display: none;
+
 }
+/*Videos*/
+
+
+
+.videos-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap : 4em;
+  
+}
+
+.iframe-container {
+  aspect-ratio: 16/9;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  
+}
+
+.iframe-container iframe {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+
+
+/*@media (min-width: 36em) {
+  .videos-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+  
+}*/
+
+
+
+
+
+
 @media (min-width: 20em) and (max-width: 20.375em) {
   .playlist .song-list li {
     grid-template-columns: auto auto auto auto;
@@ -1321,10 +1365,17 @@ h1 {
    
   }
   
-  
-  
-  
- }
+}
+
+
+@media (min-width: 48em)  {
+  .videos-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+}
+
+
 @media (min-width: 36em) and (max-width: 60.9em) {
   .playlist .song-list {
     grid-template-columns: 1fr 1fr;
@@ -1358,6 +1409,10 @@ h1 {
   .albums {
     grid-column: 1 / -1;
     grid-row: 4 /5;
+  }
+
+  .videos {
+    grid-column: 1/ -1;
   }
 
   .album img {
@@ -1407,6 +1462,8 @@ h1 {
     padding-top: 4.3rem;
   }
 
+  
+
 
 }
 
@@ -1439,10 +1496,6 @@ h1 {
     
   }
    
- 
-   
-   
-  
   .streaming .albums-container {
     justify-self: start;
    
