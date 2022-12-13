@@ -520,14 +520,11 @@ section:nth-child(3) {
 
 .hero {
   background-color: var(--clr-bg-300);
-  
 }
-
 
 .left-hero {
   display: flex;
   flex-direction: column-reverse;
- 
 }
 
 h1 {
@@ -542,8 +539,6 @@ h1 {
   gap: 1rem;
 }
 
-
-
 .hero-img {
   background-image: url("images/hero-img.jpg");
   background-repeat: no-repeat;
@@ -551,9 +546,6 @@ h1 {
   padding: 7rem;
   background-position: center left;
   width: 100%;
- 
-  
-  
 }
 
 .right-img {
@@ -576,15 +568,12 @@ h1 {
   }
 }
 
-
 /*tablet*/
 @media (min-width: 36em) {
-  
   .hero-img {
     display: none;
   }
 
-  
   .hero {
     background-color: var(--clr-bg-300);
     background-image: url("images/hero-img@2x.jpg");
@@ -595,13 +584,12 @@ h1 {
     padding-top: 15rem;
     padding-bottom: 12rem;
     aspect-ratio: 4 / 3;
-    
   }
+
   .left-hero {
     position: relative;
   }
   
-
   .left-hero h1 {
     position: absolute;
     right: 16px;
@@ -628,6 +616,7 @@ h1 {
     gap: 1em;
     animation: hero-text-btns 500ms ease-in 700ms;
   }
+
   @keyframes hero-text-btns {
     0% {
       transform: translateX(-100%);
@@ -637,10 +626,6 @@ h1 {
       transform: translateX(0);
     }
   }
-
-  
-
-  
 }
 
 @media (min-width: 42em) and (max-width: 49.9em) {
@@ -651,6 +636,7 @@ h1 {
     bottom: -432px;
   }
 }
+
 @media (min-width: 50em) and (max-width: 61.75em) {
   .left-hero h1 {
     bottom: -400px;
@@ -659,13 +645,14 @@ h1 {
     bottom: -532px;
   }
 }
+
 @media (min-width: 54em)  {
-  
   .left-hero .hero-btns {
     bottom: -532px;
     right: 77px;
   }
 }
+
 @media (min-width: 61.76em) and (max-width: 74.9em) {
   .left-hero h1 {
     bottom: -440px;
@@ -676,22 +663,23 @@ h1 {
 }
 
 /*desktop*/
+
 @media (min-width: 75em) {
   .hero {
     background-image: unset;
     aspect-ratio: unset;
     padding: 0;
   }
+
   .hero-img {
     display: none;
   }
+
   .hero .container {
     display: grid;
     grid-template-columns: auto 3rem 1fr;
     grid-template-rows: 35rem;
-    
   }
-  
   
   .hero-btns {
     gap: 1em;
@@ -729,8 +717,6 @@ h1 {
     }
   }
  
-
-
   .hero-right {
     grid-column: 2 / 4;
     grid-row: 1 /2;
@@ -743,7 +729,6 @@ h1 {
     object-fit: cover;
     width: 100%;
     max-height: 100%;
-    /*max-width: 100%;*/
     grid-column: 2 / 4;
     grid-row: 1 /2;
     align-self: start;
@@ -751,6 +736,7 @@ h1 {
     aspect-ratio: 4 / 3;
     animation: hero-img-load var(--hero-load-time) ease-in-out 400ms;
   }
+  
   @keyframes hero-img-load {
     from {
       margin-left: 100%;
