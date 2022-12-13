@@ -103,7 +103,17 @@
               <a href="#" class="btn btn-secondary">See us live</a>
             </div>
           </div>
-          <img src="images/hero-img.jpg" class="right-img" alt="" />
+          <img
+            src="images/hero-img.jpg"
+            srcset="
+              images/hero-img.jpg    320w,
+              images/hero-img@2x.jpg 489w,
+              images/hero-img@3x.jpg 896w
+            "
+            sizes="(min-width: 25em) 25vw, (min-width: 62em) 60vw, 100vw"
+            class="right-img"
+            alt=""
+          /><!-- 320w etc width of img in px--><!--take up 60vw at 62 em else 100vw i.e default-->
           <!--<div class="hero-right">
             <img src="images/hero-img.jpg" alt="" />
           </div>-->
