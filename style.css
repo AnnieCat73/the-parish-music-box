@@ -1142,10 +1142,9 @@ h1 {
 .wave {
   width: 30px;
   height: 30px;
-  
-  
-  
-
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
 }
 
 .wave .wave1 {
