@@ -736,7 +736,7 @@ h1 {
     aspect-ratio: 4 / 3;
     animation: hero-img-load var(--hero-load-time) ease-in-out 400ms;
   }
-  
+
   @keyframes hero-img-load {
     from {
       margin-left: 100%;
@@ -962,7 +962,13 @@ h1 {
   top: -16px;
   left: -28px;
 }
-
+.about-img figcaption p {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-100);
+  opacity: 0.8;
+  padding-top: 1rem;
+  margin-left: -20px;
+}
 
 
 @media (min-width: 36em) {
@@ -989,19 +995,15 @@ h1 {
   .about-img figcaption {
     max-width: 85%;
     margin: 0 auto;
-    position: relative;
-    padding-bottom: 2rem;
+    
   }
-
-  .about-img figcaption::after {
-    content: "- A Fleet Street scribe";
-    font-family: var(--ff-sans);
-    font-size: var(--fs-100);
-    opacity: 0.8;
-    left: -14px;
-    bottom: -15px;
-    position: absolute;
+  .about-img figcaption p {
+  
+    font-size: var(--fs-200);
+    
   }
+  
+  
   
 }
 
@@ -1140,10 +1142,8 @@ h1 {
 .wave {
   width: 30px;
   height: 30px;
-  /*border: 1px solid #fff;*/
   
-  display: flex;
- 
+  
   
 
 }
@@ -1195,11 +1195,11 @@ h1 {
   align-items: center;
   padding: 1rem 0;
   cursor: pointer;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .playlist .song-list li:first-child {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 
@@ -1331,7 +1331,7 @@ h1 {
 .streaming .albums-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto;
   gap: 1em;
   
 }
@@ -1339,11 +1339,14 @@ h1 {
 .vinyl {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   gap: 2em;
   justify-items: center;
 }
 
+.vinyl h3 {
+  justify-self: left;
+}
 .album img {
   width: 10.938rem;
   height: 10.313rem;
@@ -1360,6 +1363,8 @@ h1 {
   display: none;
 
 }
+
+
 /*Videos*/
 
 
@@ -1543,6 +1548,18 @@ h1 {
 
 }
 
+/* WORK OUT WHERE GOES*/
+@media (min-width: 50em) and (max-width: 60.9) {
+  .vinyl {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    justify-content: space-between;
+  }
+  
+}
+
+/*******************************************/
+
 @media (min-width: 61em) {
   .streaming-container {
     
@@ -1612,4 +1629,5 @@ h1 {
 
   
 }
+
 
