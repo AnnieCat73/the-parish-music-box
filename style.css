@@ -1735,3 +1735,12 @@ h1 {
 .personal-gallery {
   background-color: var(--clr-bg-300);
 }
+
+
+
+
+/*Events*/
+
+.events {
+  background-color: var(--clr-bg-400);
+}
