@@ -1744,3 +1744,16 @@ h1 {
 .events {
   background-color: var(--clr-bg-400);
 }
+
+
+/*Contact/Bookings*/
+
+.bookings {
+  background-color: var(--clr-bg-300);
+}
+
+/*Footer*/
+
+.footer {
+  background-color: var(--clr-bg-400);
+}
