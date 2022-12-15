@@ -289,7 +289,7 @@ h3 {
 }
 
 
-/*General layout*/
+/*General layout/Utiity classes*/
 
 section {
   padding: 6rem 0 6rem 0;
@@ -321,6 +321,18 @@ section:nth-child(3) {
 .split {
   display: flex;
   align-items: center;
+}
+
+.split-v {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-upper {
+  font-size: var(--fs-200);
+  text-transform: uppercase;
+  opacity: 0.9;
+  line-height: 1.4;
 }
 
 /*tablet*/
@@ -1745,6 +1757,58 @@ h1 {
   background-color: var(--clr-bg-400);
 }
 
+.events-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+
+.events-imgs-container {
+  display: none;
+}
+
+.events-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+
+.events-details {
+  
+  gap: 1.5em;
+}
+
+.events-headings {
+  gap: 0.5em;
+}
+
+.location,
+.time {
+  gap: 0.5em;
+}
+
+.details-heading {
+  font-size: var(--fs-100);
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+
+@media (min-width: 36em)  {
+  .event-img {
+    display: none;
+  }
+
+  .events-imgs-container  {
+    display: grid;
+  }
+  .events-imgs img {
+    border-top: 1px solid rgba(214, 26, 36, 0.5);
+    filter: drop-shadow(0px -2px 10px rgba(0, 0, 0, 0.4));
+  }
+}
+@media (min-width: 62em)  {
+}
 
 /*Contact/Bookings*/
 
