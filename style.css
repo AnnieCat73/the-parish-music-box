@@ -1083,11 +1083,11 @@ h1 {
     justify-content: space-between;
    
   }
-  figure {
+  .about figure {
     order: 1;
     gap: 2em;
     margin-top: -1.875rem;
-    margin-left: 2.8rem;
+    /*margin-left: 2.8rem;*/
     
   }
 
