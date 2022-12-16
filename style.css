@@ -1751,6 +1751,7 @@ h1 {
 .personal-gallery-container {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 4em;
 }
 
 .personal-gallery .heading-desktop {
@@ -1770,6 +1771,80 @@ h1 {
 .personal-gallery .instrument {
   opacity: 0.7;
 }
+
+/*Carousel*/
+.slider {
+  width: 100%;
+  /*max-width: 800px;*/
+  height: 20rem;
+  
+  
+  /*height: 350px;*/
+  position: relative;
+  overflow: hidden; /* <===  */
+  border-radius: 15px;
+  margin:0;
+}
+
+.slide {
+  width: 100%;
+  /*max-width: 800px;*/
+  height: 20rem;
+  /*height: 350px;*/
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.slider-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+
+
+
+.slider-btn:active {
+  transform: scale(1.1);
+}
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+ 
+}
+
+
+
+.btn-next .bi,
+.btn-prev .bi {
+  position: relative;
+  color: var(--clr-bg-300);
+  bottom: 3.5px;
+  right: -1px;
+}
+
+.btn-prev .bi {
+  right: 1px;
+}
+
 
 
 
