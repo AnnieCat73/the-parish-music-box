@@ -2088,18 +2088,19 @@ h1 {
 
 /*Contact/Bookings*/
 
-.bookings {
+.contact {
   background-color: var(--clr-bg-300);
 }
+
+/*Form*/
+
+/*bookings social*/
 
 .contact-details .drums-img {
   display: none;
 }
 
-.bookings-container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+
 
 .bookings-socials .bi {
   color: var(--clr-neutral-100);
