@@ -2092,7 +2092,105 @@ h1 {
   background-color: var(--clr-bg-300);
 }
 
-/*Form*/
+.contact .form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5em;
+}
+/*form*/
+
+.contact form {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  gap: 1em;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+
+.contact input,
+.contact textarea { 
+  border: 1px solid rgb(0, 114, 66);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  padding: 0.5em 0.6em;
+  font-size: 18px;
+  outline: none;
+  color: #333;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+}
+
+.contact input::placeholder,
+textarea::placeholder {
+ 
+}
+
+.form-control {
+  font-size: 20px;
+  margin-bottom: 0.375em;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 0.375em;
+}
+
+.contact label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 0.375em;
+}
+
+.hide {
+  opacity: 0;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  padding: 0.375em;
+  /*height: 200px;*/
+  font-size: 18px;
+  resize: none;
+}
+
+
+.submit-btn {
+  display: inline-block;
+  background-color: darkred;
+  border: 0;
+  border-radius: 0.5em;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1.125;
+  padding: 0.8em 1.5em;
+  transition: background-color 0.4s ease 0s;
+  justify-self: start;
+}
+
+
+.submit-btn button:hover,
+.submit-btn button:focus {
+  color: var(--clr-accent-350);
+  border: 2px solid var(--clr-accent-350);
+  font-weight: var(--fw-800);
+}
+
+
+.thank-you {
+  padding: 40px;
+  font-size: 32px;
+  text-align: center;
+}
 
 /*bookings social*/
 
