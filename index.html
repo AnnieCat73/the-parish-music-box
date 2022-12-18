@@ -333,7 +333,7 @@
                       class="album-img"
                   /></a>
                   <span class="song">Our Roman Knows</span>
-                  <span class="running-time">04.16</span>
+                  <span class="digit">04.16</span>
                 </li>
                 <li
                   data-src="audio/Our Roman Knows.mp3"
@@ -353,40 +353,41 @@
             </div>
 
             <!--music player-->
-
-            <div class="player">
-              <div class="track-playing">
-                <img
-                  src="images/record.jpg"
-                  srcset="images/record.jpg 48w"
-                  alt="Record"
-                  class="record"
-                />
-                <p id="title" class="current-song">Song title</p>
-              </div>
-
-              <div class="controls-container">
-                <div class="slidecontainer">
-                  <i class="fas fa-volume-down"></i>
-                  <input
-                    type="range"
-                    min="0"
-                    max="100"
-                    value="50"
-                    class="controls-slider"
+            <div class="player-container">
+              <div class="player">
+                <div class="track-playing">
+                  <img
+                    src="images/record.jpg"
+                    srcset="images/record.jpg 48w"
+                    alt="Record"
+                    class="record"
                   />
-                  <i class="fas fa-volume-up"></i>
+                  <p id="title" class="current-song">Song title</p>
                 </div>
-                <div class="controls">
-                  <button class="previous" id="previous">
-                    <i class="fas fa-step-backward"></i>
-                    <button class="play-pause" id="play-pause">
-                      <i class="fas fa-play"></i>
+
+                <div class="controls-container">
+                  <div class="slidecontainer">
+                    <i class="fas fa-volume-down"></i>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="50"
+                      class="controls-slider"
+                    />
+                    <i class="fas fa-volume-up"></i>
+                  </div>
+                  <div class="controls">
+                    <button class="previous" id="previous">
+                      <i class="fas fa-step-backward"></i>
+                      <button class="play-pause" id="play-pause">
+                        <i class="fas fa-play"></i>
+                      </button>
                     </button>
-                  </button>
-                  <button class="next" id="next">
-                    <i class="fas fa-step-forward"></i>
-                  </button>
+                    <button class="next" id="next">
+                      <i class="fas fa-step-forward"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

@@ -41,6 +41,7 @@
   --clr-bg-300: #242424;/*dark*/
   --clr-bg-400: #343434;/*#2b2b2b;/*light*/
   --clr-bg-500: #404040;/*masterplay bg/playlist hover/band members bg*/
+ 
   --clr-bg-600: #1a1a1a;/*Form bg*/
 
   --clr-accent-300: #d61a24;
@@ -1013,10 +1014,7 @@ h1 {
     margin: 0 auto;
     
   }
-  .about-img figcaption p {
   
-    
-  }
   
   
   
@@ -1211,6 +1209,11 @@ h1 {
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+.playlist .song-list li:hover {
+  background-color: var(--clr-bg-500);
+}
+
+
 
 .playlist .song-list li:first-child {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1221,6 +1224,7 @@ h1 {
 .song-list li .digit {
   font-size: var(--fs-200);
   opacity: 0.7;
+  padding: 0 .5em;
 }
 
 .song-list li .song {
@@ -1235,11 +1239,14 @@ h1 {
 
 /*music player*/
 
- .player {
-  background-color: #2b2b2b;
+
+
+.player {
+  background-color: var(--clr-bg-500);
   display: grid;
-  grid-template-columns: 1fr 10rem;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5em;
   padding: 1.5rem 3.25rem;
   border-radius: 6px;
 }
@@ -1303,7 +1310,7 @@ h1 {
   transition: 0.2;
   border-radius: 20px;
   margin: 0 1rem;
-  width: 100%;
+  width: 50%;
 }
 
 .controls-slider:hover {
@@ -1451,13 +1458,7 @@ h1 {
    
   }
 
-  .player {
-    
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 1.5rem 3.25rem;
-    border-radius: 6px;
-  }
+  
 }
 @media (min-width: 20em) and (max-width: 32em) {
   
@@ -1466,11 +1467,7 @@ h1 {
     gap: 1em;
     align-items: center;
   }
-  .player {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1em;
-  }
+  
   .controls {
     padding-top: 1em;
   }
@@ -1485,6 +1482,21 @@ h1 {
   
 }
 
+@media (min-width: 28em) {
+  .player {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+  }
+  .track-playing {
+    flex-direction: column;
+  }
+  .record {
+    width: 5rem;
+    
+    margin-left: -.2em
+  }
+}
 
 @media (min-width: 48em)  {
   .videos-container {
@@ -1517,12 +1529,12 @@ h1 {
     grid-column: 1 / -1;
     grid-row: 2 /3;
   }
-  .player {
+
+  .player-container {
     grid-column: 1 / -1;
     grid-row: 3 /4;
-    grid-template-columns: auto auto;
-    
   }
+  
 
   
 
@@ -1644,6 +1656,39 @@ h1 {
     margin-top: 0;
     margin-left: 0;
   }
+
+  .player-container {
+    
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    
+    
+    justify-content: center;
+  }
+
+
+  .player {
+    grid-template-columns: 18rem 26rem;
+    padding: 2em 7em;
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+    
+  }
+
+  .controls-container {
+    justify-content: space-around;
+  }
+
+  .record {
+    width: 7rem;
+    margin-left: -.7em
+  }
+
+  .track-playing {
+   
+  }
+
+
 
 }
 
