@@ -2133,7 +2133,7 @@ h1 {
 .contact input,
 .contact textarea { 
   background-color: var(--clr-bg-600);
-  border: 0;
+  
   border-radius: 4px;
   width: 100%;
   padding: 0.8125em 0.75em 0.75em 0.75em;
@@ -2186,24 +2186,18 @@ textarea {
 
 
 .submit-btn {
-  display: inline-block;
   background-color: var(--clr-accent-300);
   border: 0;
-  border-radius: 0.5em;
-  color: var(--clr-neutral-100);
-  cursor: pointer;
   line-height: 1.125;
-  padding: 0.8em 1.5em;
-  
+  padding: 0.8em 1.5em;/*CAN CHANGE IT TO MATCH BNTS UP*/
   justify-self: start;
 }
 
 
-.submit-btn button:hover,
-.submit-btn button:focus {
-  color: var(--clr-accent-350);
-  border: 2px solid var(--clr-accent-350);
-  font-weight: var(--fw-800);
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: var(--clr-hover-primary);
+  
 }
 
 
