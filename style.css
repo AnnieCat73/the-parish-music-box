@@ -2,6 +2,7 @@
 :root {
   --ff-sans: "Fira Sans", sans-serif;
   --ff-serif: "Playfair Display", serif;
+  --ff-quote: 'PT Serif Caption', serif;
 
   /* small screen font-sizes */
 
@@ -956,7 +957,8 @@ h1 {
 }
 
 .about-img figcaption {
-  font-family: var(--ff-serif);
+  
+  font-family: var(--ff-quote);
   font-size: var(--fs-450);
   font-style: italic;
   line-height: 1.6875em;
@@ -1012,8 +1014,8 @@ h1 {
   }
   .about-img figcaption p {
   
-    font-size: var(--fs-200);
-    
+    font-size: var(--fs-100);
+    text-transform: uppercase;
   }
   
   
