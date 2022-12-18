@@ -2133,7 +2133,7 @@ h1 {
 .contact input,
 .contact textarea { 
   background-color: var(--clr-bg-600);
-  
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   width: 100%;
   padding: 0.8125em 0.75em 0.75em 0.75em;
