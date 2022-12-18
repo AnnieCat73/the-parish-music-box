@@ -395,6 +395,10 @@ section:nth-child(3) {
   display: none;
 }
 
+.logo {
+  width: 2.25rem;border-radius: 2px;
+}
+
 /*mobile/tablet header*/
 .open-nav{
   border: 0;
@@ -473,7 +477,7 @@ section:nth-child(3) {
 /*desktop*/
 @media (min-width: 62em) {
   header {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 3rem;
   }
   .open-nav {
     display: none;
