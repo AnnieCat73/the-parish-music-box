@@ -238,6 +238,7 @@ h3 {
 
 .text-400 {
   font-size: var(--fs-400);
+  opacity: 0.9;
 }
 
 .btn {
@@ -508,30 +509,32 @@ section:nth-child(3) {
     text-decoration: none;
     text-transform: uppercase;
     font-size: var(--fs-400);
-    /*transition: all 0.2s ease-in-out;*/
-    transition: all 0.4 ease;
     position: relative;
     transform: scaleX(0);
   }
 
- 
-
   .nav-item:hover,
   .nav-item:focus {
     opacity: 1;
-   
   }
 
-  .nav-item:hover::after {
+  .nav-item::before {
     content: "";
     position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 0;
     height: 2px;
     background-color: var(--clr-accent-400);
-    width: 100%;
-    bottom: -3px;
-    left: 0;
-    transform: scaleX(1);
+    transition: width 0.25s ease-out;
   }
+
+  .nav-item:hover::before {
+    width: 100%;
+    
+  }
+
+  
   
 }
 
@@ -962,7 +965,6 @@ h1 {
 }
 
 .about-img figcaption {
-  
   font-family: var(--ff-quote);
   font-size: var(--fs-450);
   font-style: italic;
@@ -1688,8 +1690,8 @@ h1 {
     margin-left: -.7em
   }
 
-  .track-playing {
-   
+  .videos-container {
+    gap: 7em;
   }
 
 
