@@ -14,7 +14,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 //Masterplay
-const music = new Audio("audio/Our Roman Knows.mp3");
+const music = new Audio("audio/Bring It On.MP3");
 
 let masterPlay = document.getElementById("masterPlay");
 
