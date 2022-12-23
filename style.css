@@ -175,13 +175,17 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.8rem, 2.4224rem + 1.8880vw, 4.688rem);
+  
+  
+  font-size: clamp(2.8rem, 1.6301rem + 5.8495vw, 6.2rem);
   line-height: 1;
   letter-spacing: -2px;
 }
 
 h1 span {
-  font-size: clamp(3.3rem, 2.7600rem + 2.7000vw, 6rem);
+  
+  
+  font-size: clamp(3.3rem, 1.9622rem + 6.6890vw, 7.188rem);
   line-height: 1;
 }
 
@@ -258,10 +262,7 @@ h3 {
 
 /*desktop*/
 @media (min-width: 62em) {
-  h1 span {
-    /*font-size: 5.75rem;*/
-    
-  }
+  
   .btn {
     font-size: var(--fs-400);
   }
@@ -291,6 +292,12 @@ section:nth-child(3) {
   margin: 0 auto;
   padding: 0 1.5rem;
   /*outline: 1px solid red;*/
+}
+
+.container-hero {
+  max-width: 105rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .flow-content > * + * { /*about text*/
@@ -333,8 +340,12 @@ section:nth-child(3) {
 
 /*desktop*/
 @media (min-width: 62em) {
-  section:nth-child(1) {
+  /*section:nth-child(1) {
     padding: 11rem 0 6rem 0;
+  }*/
+  
+  section:nth-child(1) {
+    padding: 8rem 0 4rem 0;
   }
   
   section,
@@ -349,7 +360,7 @@ section:nth-child(3) {
 .header {
   background-color: var(--clr-bg-400);
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2.5rem;
   width: 100%;
   position: fixed;
   top: 0;
@@ -668,7 +679,7 @@ h1 {
 
 /*desktop*/
 
-@media (min-width: 75em) {
+@media (min-width: 86em) {
   .hero {
     background-image: unset;
     aspect-ratio: unset;
@@ -679,16 +690,18 @@ h1 {
     display: none;
   }
 
-  .hero .container {
+  .hero .container-hero {
     display: grid;
     grid-template-columns: auto 3rem 1fr;
-    grid-template-rows: 35rem;
+    grid-template-rows: 40rem;
   }
   
   .hero-btns {
-    gap: 1em;
+    
     flex-direction: row;
-    justify-content: left;
+    justify-content: flex-start;
+    
+    gap: 3em;
   }
 
   .left-hero {
@@ -732,6 +745,7 @@ h1 {
   .right-img  {
     object-fit: cover;
     width: 100%;
+   
     max-height: 100%;
     grid-column: 2 / 4;
     grid-row: 1 /2;
