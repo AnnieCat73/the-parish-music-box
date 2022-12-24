@@ -175,17 +175,16 @@ h3 {
 }
 
 h1 {
-  
-  
-  font-size: clamp(2.8rem, 1.6301rem + 5.8495vw, 6.2rem);
+ 
+  font-size: clamp(2.8rem, 2.1325rem + 3.3374vw, 6.2rem);
+
   line-height: 1;
   letter-spacing: -2px;
 }
 
 h1 span {
   
-  
-  font-size: clamp(3.3rem, 1.9622rem + 6.6890vw, 7.188rem);
+  font-size: clamp(3.3rem, 2.5367rem + 3.8164vw, 7.188rem);
   line-height: 1;
 }
 
@@ -272,11 +271,11 @@ h3 {
 /*General layout/Utiity classes*/
 
 section {
-  padding: 6rem 0 6rem 0;
+  padding: 7rem 0 6rem 0;
 }
 
 section:nth-child(1) {
-  padding: 5rem 0 0 0;
+  padding: 5.5rem 0 0 0;
 }
 
 section:nth-child(2) {
@@ -284,7 +283,7 @@ section:nth-child(2) {
 }
 
 section:nth-child(3) {
-  padding: 1.5rem 0 3rem 0;
+  padding: 1.5rem 0 6rem 0;
 }
 
 .container {
@@ -326,7 +325,7 @@ section:nth-child(3) {
 @media (min-width: 36em) {
   section,
   section:nth-child(3) {
-    padding: 5.5rem 0;
+    padding: 7.5rem 0;
   }
 
   section:nth-child(2) {
@@ -350,7 +349,7 @@ section:nth-child(3) {
   
   section,
   section:nth-child(3) {
-    padding: 7.25rem 0;
+    padding: 9.25rem 0;
   }
   
 }
@@ -550,7 +549,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-self: center;
-  padding: 1.5rem 0 3rem 0;
+  padding: 2rem 0 4rem 0;
   gap: 1rem;
 }
 
@@ -1821,7 +1820,7 @@ h1 {
 .personal-gallery-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4em;
+  gap: 7em;
 }
 
 .personal-gallery .heading-desktop {
