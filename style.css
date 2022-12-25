@@ -998,6 +998,7 @@ h1 {
   position: relative;
   max-width: 80%;
   margin: 0 auto;
+  opacity: 0.9;
 }
 
 .about-img figcaption::before {
@@ -1174,7 +1175,15 @@ h1 {
 }
 
 .stream-icons {
-  gap: 2em;
+  gap: 3em;
+  opacity: 0.8;
+  transition: all ease-in-out .3s;
+  
+}
+.stream-icons:hover,
+.strean-icons:focus {
+  
+  opacity: 1;
   
 }
 .playlist-heading {
@@ -1245,6 +1254,7 @@ h1 {
   padding: 1rem 0;
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all ease-in-out .3s;
 }
 .playlist .song-list li:hover {
   background-color: var(--clr-bg-500);
@@ -1534,6 +1544,16 @@ h1 {
     margin-left: -.2em
   }
 }
+@media (min-width: 37em) {
+  
+  .streaming-heading {
+    align-items: unset;
+  }
+
+  .stream-icons {
+    padding-top: 1em;
+  }
+}
 
 @media (min-width: 48em)  {
   .videos-container {
@@ -1638,6 +1658,17 @@ h1 {
   
   
 }
+
+@media (min-width: 50em)  {
+  .playlist .song-list {
+    
+    gap: 0 4em;
+  }
+  
+  
+}
+
+
 @media (min-width: 52em)  {
   .streaming .albums-container {
     grid-template-columns: auto auto;
@@ -1664,6 +1695,11 @@ h1 {
     gap: 2.3em;
   }
 
+  
+}
+
+@media (min-width: 61em) {
+
   .player-container {
     display: grid;
     grid-template-columns: 1fr 60rem 1fr;
@@ -1676,22 +1712,6 @@ h1 {
     padding: 2rem 3.25rem;
   }
 
-}
-
-@media (min-width: 50em)  {
-  
-  
-
-  
-  .playlist .song-list {
-    
-    gap: 0 4em;
-  }
-  
-  
-}
-
-@media (min-width: 61em) {
   .albums-wrapper {
     gap: 4em;
   }
