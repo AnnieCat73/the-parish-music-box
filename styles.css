@@ -274,7 +274,7 @@ section {
 }
 
 section:nth-child(1) {
-  padding: 5.5rem 0 0 0;
+  padding: 4.3rem 0 0 0;/*5.5rem 0 0 0;*/
 }
 
 section:nth-child(2) {
@@ -347,9 +347,9 @@ section:nth-child(3) {
     padding: 11rem 0 6rem 0;
   }*/
   
-  section:nth-child(1) {
+  /*section:nth-child(1) {
     padding: 8rem 0 4rem 0;
-  }
+  }*/
   
   section,
   section:nth-child(3) {
@@ -359,6 +359,16 @@ section:nth-child(3) {
   section:nth-of-type(8) {
     padding-top: 7.5rem;
   }
+  
+}
+@media (min-width: 86em) {
+  
+  
+  section:nth-child(1) {
+    padding: 8rem 0 4rem 0;
+  }
+  
+  
   
 }
 
@@ -617,6 +627,7 @@ h1 {
 }
 
 /*tablet*/
+
 @media (min-width: 36em) and (max-width:85.9em){
   .hero-img {
     display: none;
@@ -626,24 +637,11 @@ h1 {
     display: none;
   }
 
-  /*.hero {
-    background-color: var(--clr-bg-300);
-    background-image: url("images/hero-img@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom -30px left;
-    width: 100%;
-    padding-top: 15rem;
-    padding-bottom: 12rem;
-    aspect-ratio: 4 / 3;
-  }*/
-
   .masthead .left-hero {
     position: relative;
   }
   
   .masthead .left-hero h1 {
-    
     animation: hero-text-load 300ms ease-in 400ms;
   }
 
@@ -659,7 +657,6 @@ h1 {
   }
   
   .masthead .left-hero .hero-btns {
-    
     align-self: unset;
     gap: 1em;
     animation: hero-text-btns 500ms ease-in 700ms;
@@ -675,13 +672,21 @@ h1 {
     }
   }
 
-  
+  .masthead .hero-btns {
+    justify-content: space-between;
+    align-self: center;
+    padding: 2rem 0 2.5rem 0;
+    gap: 1em;
+  }
 
   .masthead .left-hero {
     display: block;
   }
   .masthead {
     background-image: url("images/hero-img@2x.jpg");
+    background-color: var(--clr-bg-300);
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 60vh;
     position: relative;
     background-size: cover;
@@ -698,10 +703,9 @@ h1 {
     position: absolute;
     bottom: 1.25rem;
     right: 3.5rem;
-    /*max-width:
-    padding:*/
     flex-direction: column;
   }
+
   .color-overlay {
     position: absolute;
     height: 100%;
@@ -712,51 +716,12 @@ h1 {
 
 }
 
-@media (min-width: 60em) and (max-width: 86em) {
+@media (min-width: 57em) and (max-width: 85.9em) {
   .masthead {
-    min-height: 90vh;
-  }
-}
-/*
-@media (max-width: 35.9em) {
-  .masthead {
-    min-height: 30vh;
-  }
-}*/
-/*
-@media (min-width: 42em) and (max-width: 49.9em) {
-  .left-hero h1 {
-    bottom: -300px;
-  }
-  .left-hero .hero-btns {
-    bottom: -432px;
+    min-height: 85vh;
   }
 }
 
-@media (min-width: 50em) and (max-width: 61.75em) {
-  .left-hero h1 {
-    bottom: -400px;
-  }
-  .left-hero .hero-btns {
-    bottom: -532px;
-  }
-}
-
-@media (min-width: 54em)  {
-  .left-hero .hero-btns {
-    bottom: -532px;
-    right: 77px;
-  }
-}
-
-@media (min-width: 61.76em) and (max-width: 74.9em) {
-  .left-hero h1 {
-    bottom: -440px;
-  }
-  .left-hero .hero-btns {
-    bottom: -575px;
-  }
-}*/
 
 /*desktop*/
 
@@ -782,11 +747,9 @@ h1 {
   }
   
   .hero-btns {
-    
     flex-direction: row;
-    justify-content: flex-start;
-    
-    gap: 3em;
+    align-self: flex-start;
+    gap: 1.5em;
   }
 
   .left-hero {
