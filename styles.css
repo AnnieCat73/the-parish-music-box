@@ -2243,10 +2243,10 @@ h1 {
   gap: 0.4em;
 }
 
-.invalid {
+.contact .invalid {
   border: 1px solid var(--clr-hover-primary);
 }
-
+/***/
 
 .contact input,
 .contact textarea { 
@@ -2260,15 +2260,21 @@ h1 {
   color: var(--clr-neutral-100);
 }
 
-.contact input:focus,
-.contact textarea:focus {
-  outline: none;
-}
+
 
 .contact input::placeholder,
 textarea::placeholder {
  font-size: var(--fs-400);
 }
+.contact input:focus,
+.contact textarea:focus {
+  outline-color: transparent;
+  box-shadow: 0 0 0 2px var(--clr-bg-500);
+  background-color: #2e2d2d;
+  
+  
+}
+
 
 
 
@@ -2277,6 +2283,7 @@ textarea::placeholder {
   font-size: var(--fs-100);
   margin-top: 0.375em;
   letter-spacing: 0.02em;
+
 }
 
 .contact label {

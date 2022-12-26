@@ -311,7 +311,7 @@ const emailInput = document.querySelector("input[name='email']");
 const messageInput = document.querySelector("textarea[name='message']");
 const thankYou = document.querySelector(".thank-you");
 
-console.log(form);
+//console.log(form);
 
 nameInput.isValid = () => !!nameInput.value;
 emailInput.isValid = () => isValidEmail(emailInput.value);
@@ -373,6 +373,8 @@ form.addEventListener("submit", (e) => {
     form.remove();
     thankYou.classList.remove("hide");
   } // FOR THANK YOU msg may not need this*/
+  input.value = "";
 });
 
 inputFields.forEach((input) => input.addEventListener("input", validateInputs));
+inputFields.forEach((input) => (input.value = ""));
