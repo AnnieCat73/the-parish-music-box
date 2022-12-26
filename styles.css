@@ -232,6 +232,7 @@ h3 {
 .btn-primary {
   background-color: var(--clr-accent-300);
   padding: 0.625em 3em;
+  transition: all ease-in-out .3s;
 }
 
 .btn-primary:hover,
@@ -243,6 +244,7 @@ h3 {
   background-color: transparent;
   border: 1px solid var(--clr-neutral-100);
   padding: 0.625em 2.3em;
+  transition: all ease-in-out .3s;
 }
 
 .btn-secondary:hover,
@@ -2292,6 +2294,7 @@ textarea {
   line-height: 1.125;
   padding: 0.8em 1.5em;/*CAN CHANGE IT TO MATCH BNTS UP*/
   justify-self: start;
+  transition: all ease-in-out .3s;
 }
 
 
