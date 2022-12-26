@@ -13,6 +13,39 @@ closeBtn.addEventListener("click", () => {
   navMenu.classList.toggle("navigation-open");
 });
 
+//Navigate to sections from the mobile menu/
+//Get to sections from mobile menu
+const aboutLink = document.querySelector("#js-about");
+console.log(aboutLink);
+const musicLink = document.querySelector("#js-music");
+const reviewsLink = document.querySelector("#js-reviews");
+const galleryLink = document.querySelector("#js-gallery");
+const contactLink = document.querySelector("#js-contact");
+
+//Get to about section
+aboutLink.addEventListener("click", () => {
+  navMenu.classList.remove("navigation-open");
+});
+
+//Get to music/streaming section
+musicLink.addEventListener("click", () => {
+  navMenu.classList.remove("navigation-open");
+});
+
+//Get to reviews section
+reviewsLink.addEventListener("click", () => {
+  navMenu.classList.remove("navigation-open");
+});
+
+//Get to gallery section
+galleryLink.addEventListener("click", () => {
+  navMenu.classList.remove("navigation-open");
+});
+//Get to contact section
+contactLink.addEventListener("click", () => {
+  navMenu.classList.remove("navigation-open");
+});
+
 //Masterplay
 const music = new Audio("audio/Bring It On.MP3");
 
