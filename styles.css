@@ -223,15 +223,15 @@ h3 {
   display: inline-block;
   cursor: pointer;
   border-radius: 6px;
-  font-weight: var(--fw-300);
-  font-size: var(--fs-300);
+  
+  font-size: var(--fs-100);
   text-transform: uppercase;
   text-decoration: none;
   color: var(--clr-neutral-100);
 }
 .btn-primary {
   background-color: var(--clr-accent-300);
-  padding: 0.625em 3em;
+  padding: 0.5em 3em;
   transition: all ease-in-out .3s;
 }
 
@@ -243,7 +243,7 @@ h3 {
 .btn-secondary {
   background-color: transparent;
   border: 1px solid var(--clr-neutral-100);
-  padding: 0.625em 2.3em;
+  padding: 0.5em 2.3em;
   transition: all ease-in-out .3s;
 }
 
@@ -253,11 +253,14 @@ h3 {
   border-color: var(--clr-hover-secondary);
 }
 
-/*tablet*/
-@media (min-width: 36em) {
-  
-  
+@media (min-width: 22em ) {
+  .btn {
+    font-size: var(--fs-300);
+  }
 }
+ 
+
+
 
 
 /*desktop*/
@@ -593,14 +596,17 @@ h1 {
 
 .hero-btns {
   display: flex;
-  justify-content: space-around;
+  
+  justify-content: space-between;
   align-self: center;
   padding: 2.5rem 0 3rem 0;
   gap: 1em;
 }
 
+
 .hero-img {
   background-image: url("images/hero-img.jpg");
+  background-color: var(--clr-accent-300);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 7rem;
@@ -610,6 +616,14 @@ h1 {
 
 .right-img {
   display: none;
+}
+
+@media (min-width: 25em) {
+  .hero-btns {
+    justify-content: space-around;
+    align-self: center;
+    
+  }
 }
 
 @media (min-width: 26.875em) and (max-width: 35.9em) {
@@ -720,7 +734,8 @@ h1 {
 
 @media (min-width: 57em) and (max-width: 85.9em) {
   .masthead {
-    min-height: 85vh;
+    min-height: 80vh;
+    background-position: center left;
   }
 }
 
