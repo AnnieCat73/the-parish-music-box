@@ -16,7 +16,8 @@ closeBtn.addEventListener("click", () => {
 //Navigate to sections from the mobile menu/
 //Get to sections from mobile menu
 const aboutLink = document.querySelector("#js-about");
-console.log(aboutLink);
+//console.log(aboutLink);
+
 const musicLink = document.querySelector("#js-music");
 const reviewsLink = document.querySelector("#js-reviews");
 const galleryLink = document.querySelector("#js-gallery");
