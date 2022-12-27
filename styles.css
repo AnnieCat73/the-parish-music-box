@@ -1573,6 +1573,30 @@ h1 {
   .playlist .song-list {
     gap: 0 4em;
   }
+
+  .player-container {
+    margin-top: 2rem;
+  }
+    
+  .player {
+    position: relative;
+    grid-template-rows: 4.5rem;
+  } 
+
+  .player .track-playing {
+    flex-direction: row;
+    align-self: flex-end;
+   
+  }
+  .player .record {
+    position: absolute;
+    width: 6.5rem;
+    top: -40px;
+  }
+
+  .player .current-song {
+    margin-left: 0.6rem;
+  }
 }
 
 
@@ -1617,6 +1641,16 @@ h1 {
 
   .albums-wrapper {
     gap: 4em;
+  }
+
+  .player .record {
+    position: absolute;
+    width: 7rem;
+    top: -42px;
+  }
+
+  .player .current-song {
+    margin-left: 1rem;
   }
 }
 
