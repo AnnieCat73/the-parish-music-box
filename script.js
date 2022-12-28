@@ -4,6 +4,7 @@ const closeBtn = document.querySelector(".close-nav");
 const openBtn = document.querySelector(".open-nav");
 const navMenu = document.querySelector(".menu-inside");
 
+
 //Attach eventlisteners and toggle navigation-open class
 openBtn.addEventListener("click", () => {
   navMenu.classList.toggle("navigation-open");
@@ -15,15 +16,14 @@ closeBtn.addEventListener("click", () => {
 
 //Navigate to sections from the mobile menu/
 //Get to sections from mobile menu
-const aboutLink = document.querySelector("#js-about");
-//console.log(aboutLink);
 
+const aboutLink = document.querySelector("#js-about");
 const musicLink = document.querySelector("#js-music");
 const reviewsLink = document.querySelector("#js-reviews");
 const galleryLink = document.querySelector("#js-gallery");
 const contactLink = document.querySelector("#js-contact");
 
-//Get to about section
+//Get to about section - not working at the moment
 aboutLink.addEventListener("click", () => {
   navMenu.classList.remove("navigation-open");
 });
@@ -42,10 +42,22 @@ reviewsLink.addEventListener("click", () => {
 galleryLink.addEventListener("click", () => {
   navMenu.classList.remove("navigation-open");
 });
+
 //Get to contact section
 contactLink.addEventListener("click", () => {
   navMenu.classList.remove("navigation-open");
 });
+
+/*Get to about section when viewport with is more than 36em width
+const mediaQuery = window.matchMedia("(min-width: 876px)");
+// Check if the media query is true
+if (mediaQuery.matches) {
+  // Then trigger an alert
+  const aboutLink = document.querySelector("#js-about");
+  aboutLink.addEventListener("click", () => {
+    navMenu.classList.remove("navigation-open");
+  });
+}*/
 
 //Masterplay
 const music = new Audio("audio/Bring It On.MP3");
@@ -112,7 +124,7 @@ let volDot = document.getElementById("vol-dot");
 let volBar = document.getElementsByClassName("vol-bar")[0];
 
 vol.addEventListener("change", () => {
-  if (vol.value == 0) {
+  if (vol.value === 0) {
     volIcon.classList.remove("bi-volume-down-fill");
     volIcon.classList.add("bi-volume-mute-fill");
     volIcon.classList.remove("bi-volume-up-fill");
@@ -143,7 +155,7 @@ const songList = document.querySelector(".song-list");
 const title = document.querySelector("#title");
 const record = document.querySelector(".record");
 const volSlider = document.querySelector(".slider");
-console.log(audio);
+
 
 let songArray = [];
 let songHeading = "";
@@ -186,6 +198,7 @@ function pauseAudio() {
   isPlaying = false;
   record.classList.remove("record-animation");
 }
+
 function nextSong() {
   songIndex++;
   if (songIndex > songArray.length - 1) {
@@ -194,6 +207,7 @@ function nextSong() {
   loadAudio();
   playAudio();
 }
+
 function previousSong() {
   songIndex--;
   if (songIndex > songArray.length - 1) {
