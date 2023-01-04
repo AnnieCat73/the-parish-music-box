@@ -34,7 +34,7 @@
   --clr-bg-600: #1a1a1a;/*Form bg*/
 
   --clr-accent-300: #d61a24;
-  --clr-accent-400: #e31b26;/*accent on lighter bg + NB ALL GRAPHICS on dark and light bg*/
+  --clr-accent-400:#de1721; /*accent on lighter bg + NB ALL GRAPHICS on dark and light bg*/
   --clr-accent-500: #ff8b7a;/*accent for playmaster volume up only*/
 
   --clr-hover-primary: #bd0b15;
@@ -194,7 +194,6 @@ h3 {
   display: inline-block;
   cursor: pointer;
   border-radius: 6px;
-  /*font-size: var(--fs-100);*/
   text-transform: uppercase;
   text-decoration: none;
   color: var(--clr-neutral-100);
@@ -294,9 +293,10 @@ section:nth-child(3) {
 .p-upper {
   font-size: var(--fs-200);
   text-transform: uppercase;
-  opacity: 0.7;
+  opacity: 0.6;
   line-height: 1.4;
   font-style: italic;
+  font-weight: var(--fw-500);
 }
 
 /*tablet*/
@@ -388,7 +388,7 @@ section:nth-child(3) {
   padding: 0;
   font-size: 2em;
   transition: all ease-in-out .3s;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .menu-inside {
@@ -413,9 +413,9 @@ section:nth-child(3) {
   cursor: pointer;
   font-size: 3em;
   font-weight: var(--fw-300);
-  transition: linear .2s;
   margin: 0;
-  opacity: 0.7;
+  opacity: 0.8;
+  transition: all ease-in-out .5s;
 }
 
 .close-nav:hover,
@@ -427,7 +427,8 @@ section:nth-child(3) {
 
 .list-inside li {
   padding: 1rem 0 0 0;
-  opacity: 0.7;
+  opacity: 0.8;
+  transition: all ease-in-out .5s;
 }
 .list-inside li:hover,
 .list-inside li:focus {
@@ -805,7 +806,7 @@ h1 {
   
   .master-play .subtitle{
     font-size: var(--fs-100);
-    opacity: 0.6;
+    opacity: 0.7;
   }
   .master-play .icon{
     font-size: 20px;
@@ -1132,7 +1133,7 @@ h1 {
 
 .stream-icons {
   gap: 3em;
-  opacity: 0.8;
+  opacity: 0.7;
   transition: all ease-in-out .3s;
 }
 
@@ -1212,7 +1213,7 @@ h1 {
 
 .song-list li .digit {
   font-size: var(--fs-200);
-  opacity: 0.7;
+  opacity: 0.6;
   padding: 0 .5em;
 }
 
@@ -1290,18 +1291,18 @@ h1 {
   -webkit-appearance: none;
   cursor: pointer;
   height: 8px;
-  background: #fff;
   outline: none;
-  opacity: 0.7;
+  opacity: 0.9;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   border-radius: 20px;
   margin: 0 1rem;
   width: 50%;
+  color: #f1f1f1;
 }
 
 .controls-slider:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .controls {
@@ -1329,7 +1330,7 @@ h1 {
 
 .play-pause > i:hover,
 .controls > button > i:hover {
-  opacity: 0.7;
+  opacity: 0.8;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -2143,13 +2144,14 @@ h1 {
 .contact input::placeholder,
 textarea::placeholder {
  font-size: var(--fs-400);
+ color: #939393;
 }
 
 .contact input:focus,
 .contact textarea:focus {
   outline-color: transparent;
   box-shadow: 0 0 0 2px var(--clr-bg-500);
-  background-color: #2e2d2d;
+  background-color: #2d2d2d;
 }
 
 .error {
@@ -2185,7 +2187,8 @@ textarea {
   background-color: var(--clr-accent-300);
   border: 0;
   line-height: 1.125;
-  padding: 0.8em 1.5em;/*CAN CHANGE IT TO MATCH BNTS UP*/
+  padding: 0.8em 2em;/*CAN CHANGE IT TO MATCH BNTS UP*/
+ 
   justify-self: start;
   transition: all ease-in-out .3s;
 }
