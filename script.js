@@ -48,16 +48,6 @@ contactLink.addEventListener("click", () => {
   navMenu.classList.remove("navigation-open");
 });
 
-/*Get to about section when viewport with is more than 36em width
-const mediaQuery = window.matchMedia("(min-width: 876px)");
-// Check if the media query is true
-if (mediaQuery.matches) {
-  // Then trigger an alert
-  const aboutLink = document.querySelector("#js-about");
-  aboutLink.addEventListener("click", () => {
-    navMenu.classList.remove("navigation-open");
-  });
-}*/
 
 //Masterplay
 const music = new Audio("audio/Bring It On.MP3");
