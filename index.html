@@ -879,18 +879,18 @@
                 For booking and general enquiries please see below
               </p>
             </div>
-            <form action="https://formsubmit.co/andy.knapp123@gmail.com" method="POST" >
-              <input type="hidden" name="_subject" value="New email wooooo!">
-              <input type="hidden" name="_next" value="https://spectacular-unicorn-db5474.netlify.app/thankyou.html">
+            <form name="contact-form" method="POST" data-netlify="true">
+              <!--<input type="hidden" name="_subject" value="New email wooooo!">
+              <input type="hidden" name="_next" value="https://spectacular-unicorn-db5474.netlify.app/thankyou.html">-->
               <div class="form-control">
                 <label for="name">Full Name</label>
-                <input id="name" type="text" name="name" placeholder="First and Last Name" required>
+                <input id="name" type="text" name="name" placeholder="First and Last Name">
                 <div class="error hide">Name is required</div>
               </div>
 
               <div class="form-control">
                 <label for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="example@domain.com" required>
+                <input id="email" type="email" name="email" placeholder="example@domain.com">
                 <div class="error hide">Email is invalid</div>
               </div>
               
@@ -898,7 +898,7 @@
                 <label for="message">Message</label>
                 <textarea id="message"
                   name="message"
-                  placeholder="Enter your message" required
+                  placeholder="Enter your message"
                   rows="6"
                 ></textarea>
                 <div class="error hide">Message is required</div>

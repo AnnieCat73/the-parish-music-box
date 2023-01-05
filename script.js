@@ -309,7 +309,7 @@ prevSlide.addEventListener("click", function () {
 });
 
 //Contact Form
-const form = document.querySelector("form[name='contact-form']");
+const form = document.querySelector("[name='contact-form']");
 const nameInput = document.querySelector("input[name='name']");
 const emailInput = document.querySelector("input[name='email']");
 

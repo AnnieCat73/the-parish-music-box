@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--Contact-->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="form-container">
+        <div class="form-heading split-v">
+          <h2>Bookings</h2>
+          <p class="p-upper">
+            For booking and general enquiries please see below
+          </p>
+        </div>
+        <form action="https://formsubmit.co/andy.knapp123@gmail.com" method="POST" >
+          <input type="hidden" name="_subject" value="New email wooooo!">
+          <input type="hidden" name="_next" value="https://spectacular-unicorn-db5474.netlify.app/thankyou.html">
+          <div class="form-control">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" name="name" placeholder="First and Last Name" required>
+            <div class="error hide">Name is required</div>
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="example@domain.com" required>
+            <div class="error hide">Email is invalid</div>
+          </div>
+          
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message"
+              name="message"
+              placeholder="Enter your message"
+              rows="6" required
+            ></textarea>
+            <div class="error hide">Message is required</div>
+          </div>
+          
+          <button class="submit-btn btn" type="submit">Submit Form</button>
+        </form>
+        <div class="thank-you hide">Thank you for your feedback!</div>
+
+        <div class="contact-details">
+          <figure class="drums-img">
+            <img
+              src="images/drumbookings.jpg"
+              alt="The Parish Music Box drums"
+              srcset="images/drumbookings.jpg,
+              images/drumsbookings@2x.jpg 2x,
+              images/drumsbookings@3x.jpg 3x"
+            >
+          </figure>
+          <div class="bookings-socials">
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <address>+447891 689205</address>
+            </div>
+            <div class="email">
+              <a href="mailto:anniecats673@gmail.com"
+                ><i class="bi bi-envelope"></i>
+                <address>andy.knapp123@gmail.com</address>
+              </a>
+            </div>
+            <a href="https://www.facebook.com/people/The-Parish-Music-Box/100063264425821/"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

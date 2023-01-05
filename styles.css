@@ -2140,6 +2140,16 @@ h1 {
   gap: 0.4em;
 }
 
+
+/******/
+.contact input:required:focus,
+.contact textarea:required:focus {
+  border: 1px solid var(--clr-hover-primary);
+  outline: none;
+}
+
+/******/
+
 .contact .invalid {
   border: 1px solid var(--clr-hover-primary);
 }
@@ -2169,6 +2179,7 @@ textarea::placeholder {
   background-color: #2d2d2d;
 }
 
+
 .error {
   color: var(--clr-hover-primary);
   font-size: var(--fs-100);
@@ -2182,6 +2193,7 @@ textarea::placeholder {
   margin-bottom: 0.375em;
   opacity: 0.8;
 }
+
 
 .hide {
   display: none;
@@ -2213,11 +2225,12 @@ textarea {
   background-color: var(--clr-hover-primary);
 }
 
+/*
 .thank-you {
   padding: 3em;
   font-size: var(--fs-400);
   text-align: center;
-}
+}*/
 
 /*bookings social*/
 
