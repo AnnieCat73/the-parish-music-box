@@ -884,21 +884,21 @@
               <input type="hidden" name="_subject" value="New email wooooo!">
               <div class="form-control">
                 <label for="name">Full Name</label>
-                <input id="name" type="text" name="name" placeholder="First and Last Name" >
+                <input id="name" type="text" name="name" placeholder="First and Last Name" required>
                 <div class="error hide">Name is required</div>
               </div>
 
               <div class="form-control">
                 <label for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="example@domain.com" >
+                <input id="email" type="email" name="email" placeholder="example@domain.com" required>
                 <div class="error hide">Email is invalid</div>
               </div>
-
+              <input type="hidden" name="_next" value="https://spectacular-unicorn-db5474.netlify.app/thankyou.html">
               <div class="form-control">
                 <label for="message">Message</label>
                 <textarea id="message"
                   name="message"
-                  placeholder="Enter your message"
+                  placeholder="Enter your message" required
                   rows="6"
                 ></textarea>
                 <div class="error hide">Message is required</div>
