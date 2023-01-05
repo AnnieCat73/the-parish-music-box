@@ -1774,6 +1774,7 @@ h1 {
 }
 
 @media (min-width: 62em)  {
+  
   .reviews-container {
     gap: 6em;
   }
