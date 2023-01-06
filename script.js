@@ -309,14 +309,15 @@ prevSlide.addEventListener("click", function () {
 });
 
 //Contact Form
-const form = document.querySelector("[name='contact']");
+const form = document.querySelector("[name='contact-new']");
 const nameInput = document.querySelector("input[name='name']");
 const emailInput = document.querySelector("input[name='email']");
 
-const messageInput = document.querySelector("textarea[name='message']");
-const thankYou = document.querySelector(".thank-you");
 
-//console.log(form);
+const messageInput = document.querySelector("textarea[name='message']");
+//const thankYou = document.querySelector(".thank-you");
+
+
 
 nameInput.isValid = () => !!nameInput.value;
 emailInput.isValid = () => isValidEmail(emailInput.value);
@@ -331,10 +332,10 @@ const isValidEmail = (email) => {
   return re.test(String(email).toLowerCase());
 };
 
-const isValidPhone = (phone) => {
+/*const isValidPhone = (phone) => {
   const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
   return re.test(String(phone).toLowerCase());
-};
+};*/
 
 let isFormValid = false;
 isValidationOn = false;
@@ -374,7 +375,7 @@ form.addEventListener("submit", (e) => {
   isValidationOn = true;
 
   validateInputs();
-  /*if (isFormValid) {
+  if (isFormValid) {
     //form.remove();
     //thankYou.classList.remove("hide");
   } // FOR THANK YOU msg may not need this*/

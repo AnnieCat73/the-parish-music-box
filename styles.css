@@ -2376,11 +2376,11 @@ textarea {
   gap: 0.4em;
 }
 
-/****
-.new-form .invalid {
+/****/
+.contact-form .invalid {
   border: 1px solid var(--clr-hover-primary);
 }
-
+/****/
 .error {
   color: var(--clr-hover-primary);
   font-size: var(--fs-100);
