@@ -2352,6 +2352,12 @@ textarea {
   
 }
 
+/*New Form*/
+
+.new-form {
+  background-color: #242424;
+}
+
 /*Footer*/
 
 .footer {
