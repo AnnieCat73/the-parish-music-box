@@ -945,25 +945,26 @@
               </p>
             </div>
             <form name="contact-new" method="POST" data-netlify="true">
-              <p class="form-control">
+              <div class="form-control">
                 <label for="name">Full Name</label>
                 <input id="name" type="text" name="name" placeholder="First and Last Name">
-              
-              </p>
-              <p class="form-control">
+                <!---->
+                <div class="error hide">Name is required</div>
+              </div>
+              <div class="form-control">
                 <label for="email">Email</label>
                 <input id="email" type="email" name="email" placeholder="example@domain.com">
                 
-              </p>
+              </div>
               
-              <p class="form-control">
+              <div class="form-control">
                 <label for="message">Message</label>
                 <textarea id="message"
                 name="message"
                 placeholder="Enter your message"
                 rows="6"></textarea>
                
-              </p>
+              </div>
               <p>
                 <button class="submit-btn btn" type="submit">Submit Form</button>
               </p>
