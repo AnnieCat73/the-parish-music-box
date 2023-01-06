@@ -947,25 +947,23 @@
             <form name="contact-new" method="POST" data-netlify="true">
               <div class="form-control">
                 <label for="name">Full Name</label>
-                <input id="name" type="text" name="name" placeholder="First and Last Name" required>
-                <!---->
-                <div class="error hide">Name is required</div>
+                <input id="name" type="text" name="name" placeholder="First and Last Name" minlength="3" maxlength="30" required>
+                
+                
               </div>
               <div class="form-control">
                 <label for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="example@domain.com" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required>
-                <!---->
-                <div class="error hide">Email is invalid</div>
+                <input id="email" type="email" name="email" placeholder="example@domain.com" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required >
               </div>
               
-              <div class="form-control">
+              <div class="form-control" >
                 <label for="message">Message</label>
-                <textarea id="message"
+                <textarea title="Message is required" id="message"
                 name="message"
                 placeholder="Enter your message"
                 rows="6" required></textarea>
-                <!---->
-                <div class="error hide">Message is required</div>
+                
+               
               </div>
               <p>
                 <button class="submit-btn btn" type="submit">Submit Form</button>

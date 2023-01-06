@@ -384,3 +384,10 @@ form.addEventListener("submit", (e) => {
 
 inputFields.forEach((input) => input.addEventListener("input", validateInputs));
 inputFields.forEach((input) => (input.value = ""));*/
+
+document.querySelectorAll('.form-control[data-error] input').forEach(inpEl => {
+    inpEl.addEventListener('input', () => 
+      inpEl.parentElement.removeAttribute('data-error')
+     
+    );
+});

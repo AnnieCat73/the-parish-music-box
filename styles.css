@@ -2404,6 +2404,8 @@ textarea {
   font-size: var(--fs-400);
   outline: none;
   color: var(--clr-neutral-100);
+  /*/*/
+
 }
 
 .new-form input::placeholder,
