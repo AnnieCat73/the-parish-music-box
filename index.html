@@ -879,29 +879,27 @@
                 For booking and general enquiries please see below
               </p>
             </div>
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-              <p hidden aria-hidden="true">
-                <label>Don't fill out this <input name="bot-field"></label>
-              </p>
+            <form name="contact" method="POST" data-netlify="true">
+              
               <div class="form-control">
-                <label for="name">Full Name</label>
-                <input id="name" type="text" name="name" placeholder="First and Last Name">
+                <label for="name">Full Name <input type="text" name="name" placeholder="First and Last Name"></label>
+                
                 <div class="error hide">Name is required</div>
               </div>
 
               <div class="form-control">
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="example@domain.com">
+                <label for="email">Email <input type="email" name="email" placeholder="example@domain.com"></label>
+                
                 <div class="error hide">Email is invalid</div>
               </div>
               
               <div class="form-control">
-                <label for="message">Message</label>
-                <textarea id="message"
+                <label for="message">Message <textarea 
                   name="message"
                   placeholder="Enter your message"
                   rows="6"
-                ></textarea>
+                ></textarea></label>
+                
                 <div class="error hide">Message is required</div>
               </div>
               
@@ -937,21 +935,24 @@
         </div>
       </section>
       <section class="new-form">
-        <form name="contact-new" method="POST" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name" />Name</label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" />Email</label>
-          </p>
-          
-          <p>
-            <label>Message: <textarea name="message"></textarea>Type your message</label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+        <div class="container">
+          <form name="contact-new" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" />Name</label>
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" />Email</label>
+            </p>
+            
+            <p>
+              <label>Message: <textarea name="message"></textarea>Type your message</label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+        </div>
+        
       </section>
     </main>
     <footer class="footer split">
