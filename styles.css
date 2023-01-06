@@ -2116,7 +2116,7 @@ h1 {
 }
 
 
-/*Contact/Bookings*/
+/*Contact/Bookings*
 
 .contact-form {
   background-color: var(--clr-bg-300);
@@ -2128,7 +2128,7 @@ h1 {
   gap: 2.5em;
 }
 
-/*form*/
+/*form*
 
 .contact-form form {
   display: grid;
@@ -2141,14 +2141,14 @@ h1 {
 }
 
 
-/******/
+/******
 .contact-form input:required:focus,
 .contact-form textarea:required:focus {
   border: 1px solid var(--clr-hover-primary);
   outline: none;
 }
 
-/******/
+/******
 
 .contact-form .invalid {
   border: 1px solid var(--clr-hover-primary);
@@ -2205,7 +2205,7 @@ textarea {
   border-radius: 4px;
   outline: none;
   border: 0;
-  /*height: 200px;*/
+  /*height: 200px;*
   font-size: var(--fs-400);
   resize: none;
 }
@@ -2214,7 +2214,7 @@ textarea {
   background-color: var(--clr-accent-300);
   border: 0;
   line-height: 1.125;
-  padding: 0.8em 2em;/*CAN CHANGE IT TO MATCH BNTS UP*/
+  padding: 0.8em 2em;/*CAN CHANGE IT TO MATCH BNTS UP*
  
   justify-self: start;
   transition: all ease-in-out .3s;
@@ -2232,7 +2232,7 @@ textarea {
   text-align: center;
 }*/
 
-/*bookings social*/
+/*bookings social*
 
 .contact-details .drums-img {
   display: none;
@@ -2350,7 +2350,7 @@ textarea {
     align-self: center;
   }
   
-}
+}*/
 
 /*New Form*/
 
