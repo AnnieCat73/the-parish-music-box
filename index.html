@@ -944,12 +944,11 @@
                 For booking and general enquiries please see below
               </p>
             </div>
-            <form name="contact-new" method="POST" data-netlify="true">
+            <form name="contact-new" method="POST" data-netlify="true" onsubmit="submit" data-netlify-honeypot="bot-field" >
+              <input hidden name="bot-field">
               <div class="form-control">
                 <label for="name">Full Name</label>
                 <input id="name" type="text" name="name" placeholder="First and Last Name" minlength="3" maxlength="30" required>
-                
-                
               </div>
               <div class="form-control">
                 <label for="email">Email</label>
@@ -960,10 +959,8 @@
                 <label for="message">Message</label>
                 <textarea title="Message is required" id="message"
                 name="message"
-                placeholder="Enter your message"
+                placeholder="Enter your message" minlength="6" maxlength="500"
                 rows="6" required></textarea>
-                
-               
               </div>
               <p>
                 <button class="submit-btn btn" type="submit">Submit Form</button>
