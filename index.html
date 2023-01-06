@@ -879,7 +879,10 @@
                 For booking and general enquiries please see below
               </p>
             </div>
-            <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <p hidden aria-hidden="true">
+                <label>Don't fill out this <input name="bot-field"></label>
+              </p>
               <div class="form-control">
                 <label for="name">Full Name</label>
                 <input id="name" type="text" name="name" placeholder="First and Last Name">
