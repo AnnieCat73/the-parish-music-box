@@ -2118,11 +2118,11 @@ h1 {
 
 /*Contact/Bookings*/
 
-.contact {
+.contact-form {
   background-color: var(--clr-bg-300);
 }
 
-.contact .form-container {
+.contact-form .form-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5em;
@@ -2130,7 +2130,7 @@ h1 {
 
 /*form*/
 
-.contact form {
+.contact-form form {
   display: grid;
   grid-template-rows: repeat(4, min-content);
   gap: 1em;
@@ -2142,20 +2142,20 @@ h1 {
 
 
 /******/
-.contact input:required:focus,
-.contact textarea:required:focus {
+.contact-form input:required:focus,
+.contact-form textarea:required:focus {
   border: 1px solid var(--clr-hover-primary);
   outline: none;
 }
 
 /******/
 
-.contact .invalid {
+.contact-form .invalid {
   border: 1px solid var(--clr-hover-primary);
 }
 
-.contact input,
-.contact textarea { 
+.contact-form input,
+.contact-form textarea { 
   background-color: var(--clr-bg-600);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
@@ -2166,14 +2166,14 @@ h1 {
   color: var(--clr-neutral-100);
 }
 
-.contact input::placeholder,
-textarea::placeholder {
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
  font-size: var(--fs-400);
  color: #939393;
 }
 
-.contact input:focus,
-.contact textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
   outline-color: transparent;
   box-shadow: 0 0 0 2px var(--clr-bg-500);
   background-color: #2d2d2d;
@@ -2187,7 +2187,7 @@ textarea::placeholder {
   letter-spacing: 0.02em;
 }
 
-.contact label {
+.contact-form label {
   display: block;
   font-size: var(--fs-200);
   margin-bottom: 0.375em;
@@ -2261,13 +2261,13 @@ textarea {
 }
 
 @media (min-width: 36em) {
-  .contact form {
+  .contact-form form {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, min-content);
     gap: 1em;
   }
 
-  .contact .form-container {
+  .contact-form .form-container {
     gap: 3em;
   }
 
@@ -2311,7 +2311,7 @@ textarea {
 }
 
 @media (min-width: 55em) {
-  .contact .form-container {
+  .contact-form .form-container {
    grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
     gap: 3.5em;
@@ -2331,7 +2331,7 @@ textarea {
     grid-row: 1 /2;
   }
 
-  .contact form {
+  .contact-form form {
     grid-column: 1 /2;
     grid-row: 2 /3;
   }
