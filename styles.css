@@ -2380,7 +2380,7 @@ textarea {
 .contact-form .invalid {
   border: 1px solid var(--clr-hover-primary);
 }
-/****/
+/****
 .error {
   color: var(--clr-hover-primary);
   font-size: var(--fs-100);
@@ -2476,6 +2476,13 @@ textarea {
 .phone .bi {
   margin-left: -4px;
 }
+
+.new-form input:required:focus,
+.new-form textarea:required:focus {
+  border: 1px solid var(--clr-hover-primary);
+  outline: none;
+}
+
 
 @media (min-width: 36em) {
   .new-form form {

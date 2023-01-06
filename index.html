@@ -947,13 +947,13 @@
             <form name="contact-new" method="POST" data-netlify="true">
               <div class="form-control">
                 <label for="name">Full Name</label>
-                <input id="name" type="text" name="name" placeholder="First and Last Name">
+                <input id="name" type="text" name="name" placeholder="First and Last Name" required>
                 <!---->
                 <div class="error hide">Name is required</div>
               </div>
               <div class="form-control">
                 <label for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="example@domain.com">
+                <input id="email" type="email" name="email" placeholder="example@domain.com" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
                 <!---->
                 <div class="error hide">Email is invalid</div>
               </div>
@@ -963,7 +963,7 @@
                 <textarea id="message"
                 name="message"
                 placeholder="Enter your message"
-                rows="6"></textarea>
+                rows="6" required></textarea>
                 <!---->
                 <div class="error hide">Message is required</div>
               </div>
