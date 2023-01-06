@@ -308,7 +308,7 @@ prevSlide.addEventListener("click", function () {
   });
 });
 
-//Contact Form
+/*Contact Form
 const form = document.querySelector("[name='contact-new']");
 const nameInput = document.querySelector("input[name='name']");
 const emailInput = document.querySelector("input[name='email']");
@@ -335,7 +335,7 @@ const isValidEmail = (email) => {
 /*const isValidPhone = (phone) => {
   const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
   return re.test(String(phone).toLowerCase());
-};*/
+};*
 
 let isFormValid = false;
 isValidationOn = false;
@@ -378,9 +378,9 @@ form.addEventListener("submit", (e) => {
   if (isFormValid) {
     //form.remove();
     //thankYou.classList.remove("hide");
-  } // FOR THANK YOU msg may not need this*/
+  } // FOR THANK YOU msg may not need this*
   input.value = "";
 });
 
 inputFields.forEach((input) => input.addEventListener("input", validateInputs));
-inputFields.forEach((input) => (input.value = ""));
+inputFields.forEach((input) => (input.value = ""));*/
