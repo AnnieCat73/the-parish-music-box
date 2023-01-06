@@ -937,15 +937,24 @@
       <section class="new-form">
         <div class="container">
           <form name="contact-new" method="POST" data-netlify="true">
-            <p>
-              <label>Your Name: <input type="text" name="name" />Name</label>
+            <p class="form-control">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" name="name" placeholder="First and Last Name">
+            
             </p>
-            <p>
-              <label>Your Email: <input type="email" name="email" />Email</label>
+            <p class="form-control">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="example@domain.com">
+              
             </p>
             
-            <p>
-              <label>Message: <textarea name="message"></textarea>Type your message</label>
+            <p class="form-control">
+              <label for="message">Message</label>
+              <textarea id="message"
+              name="message"
+              placeholder="Enter your message"
+              rows="6"></textarea>
+             
             </p>
             <p>
               <button type="submit">Send</button>
