@@ -374,9 +374,9 @@ form.addEventListener("submit", (e) => {
   isValidationOn = true;
 
   validateInputs();
-  if (isFormValid) {
-    form.remove();
-    thankYou.classList.remove("hide");
+  /*if (isFormValid) {
+    //form.remove();
+    //thankYou.classList.remove("hide");
   } // FOR THANK YOU msg may not need this*/
   input.value = "";
 });
