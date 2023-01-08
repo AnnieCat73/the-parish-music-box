@@ -25,7 +25,7 @@ With a website the band wanted to:
 
 ### Screenshot
 
-![](./images/github-screenshot.png)
+![](./images/screenshot-parish.png)
 
 ### Links
 
