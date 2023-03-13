@@ -588,6 +588,14 @@ h1 {
   display: none;
 }
 
+@media (max-width: 25.625em) {
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media (min-width: 25em) {
   .hero-btns {
     justify-content: space-around;
