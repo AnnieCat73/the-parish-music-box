@@ -611,15 +611,15 @@ h1 {
   .hero .left-hero {
     display: none;
   }
-
+  
   .masthead .left-hero {
     position: relative;
   }
-  
+  /*
   .masthead .left-hero h1 {
     animation: hero-text-load 300ms ease-in 400ms;
   }
-
+  
   @keyframes hero-text-load {
     0% {
       transform: translateY(-100%);
@@ -645,7 +645,7 @@ h1 {
       transform: translateX(0);
     }
   }
-
+  */
   .masthead .hero-btns {
     justify-content: space-between;
     align-self: center;
@@ -742,7 +742,7 @@ h1 {
     position: static;
     animation: none;
   }
-
+  /*
   @keyframes hero-text-load {
     0% {
       transform: translateX(-100%);
@@ -751,7 +751,7 @@ h1 {
     100% {
       transform: translateX(0);
     }
-  }
+  }*/
  
   .hero-right {
     grid-column: 2 / 4;
@@ -772,7 +772,7 @@ h1 {
     aspect-ratio: 4 / 3;
     animation: hero-img-load var(--hero-load-time) ease-in-out 400ms;
   }
-
+  /*
   @keyframes hero-img-load {
     from {
       margin-left: 100%;
@@ -780,7 +780,7 @@ h1 {
     to {
       margin-left: 0%;
     }
-  }
+  }*/
 }
 
 
