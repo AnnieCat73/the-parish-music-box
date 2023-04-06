@@ -575,7 +575,7 @@ h1 {
 
 
 .hero-img {
-  background-image: url("images/hero-img.jpg");
+  background-image: url("images/hero-img.webp");
   background-color: var(--clr-accent-300);
   background-repeat: no-repeat;
   background-size: cover;
@@ -665,7 +665,7 @@ h1 {
     display: block;
   }
   .masthead {
-    background-image: url("images/hero-img@2x.jpg");
+    background-image: url("images/hero-img_2x.webp");
     background-color: var(--clr-bg-300);
     background-repeat: no-repeat;
     background-size: cover;
