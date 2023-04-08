@@ -35,6 +35,19 @@
   src: url("assets/fonts/playfairdisplay-variablefont_wght-webfont.woff2") format("woff2"),
       url("assets/fonts/playfairdisplay-variablefont_wght-webfont.woff") format("woff");
 }
+@font-face {
+  font-family: "Playfair Display, serif";
+  font-weight: 700;
+  src: url("assets/fonts/playfairdisplay-variablefont_wght-webfont.woff2") format("woff2"),
+      url("assets/fonts/playfairdisplay-variablefont_wght-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "PT Serif Caption, serif";
+  font-style: italic;
+  font-weight: 400;
+  src: url("assets/fonts/ptserifcaption-italic-webfont.woff2") format("woff2"),
+      url("assets/fonts/ptserifcaption-italic-webfont.woff") format("woff");
+}
 
 
 
