@@ -1448,6 +1448,7 @@ h1 {
   width: 10.938rem;
   height: 10.313rem;
   padding-bottom: 0.5rem;
+  aspect-ratio: 1 /1;
 }
 
 .album figcaption {
