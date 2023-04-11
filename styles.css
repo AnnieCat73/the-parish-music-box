@@ -1403,6 +1403,10 @@ h1 {
   fill: #f1f1f1;
   width: 1.8rem;
 }
+.controls .forward {
+  fill: #f1f1f1;
+  width: 0.9rem;
+}
 
 .play-pause > i {
   font-size: 1.8rem !important;
