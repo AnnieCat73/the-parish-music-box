@@ -1399,6 +1399,11 @@ h1 {
   color: #f1f1f1;
 }
 
+.controls .play {
+  fill: #f1f1f1;
+  width: 1.8rem;
+}
+
 .play-pause > i {
   font-size: 1.8rem !important;
 }
