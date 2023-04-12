@@ -1408,6 +1408,13 @@ h1 {
   width: 0.9rem;
 }
 
+.controls .play:hover,
+.controls .forward:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .play-pause > i {
   font-size: 1.8rem !important;
 }
