@@ -860,6 +860,7 @@ h1 {
   
   .masterplay {
     background-color: var(--clr-bg-400);
+    padding: 2.3rem 0;
   }
   
   .master-play {
