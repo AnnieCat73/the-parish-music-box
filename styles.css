@@ -1367,6 +1367,10 @@ h1 {
   fill: #f1f1f1;
   width: 0.9rem;
 }
+.slidecontainer .up {
+  fill: #f1f1f1;
+  width: 1.5rem;
+}
 
 .controls-slider {
   -webkit-appearance: none;
