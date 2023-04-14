@@ -1363,6 +1363,11 @@ h1 {
   font-size: 1.2rem;
 }
 
+.slidecontainer .down {
+  fill: #f1f1f1;
+  width: 0.9rem;
+}
+
 .controls-slider {
   -webkit-appearance: none;
   cursor: pointer;
