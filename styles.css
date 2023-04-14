@@ -1404,7 +1404,8 @@ h1 {
   fill: #f1f1f1;
   width: 1.8rem;
 }
-.controls .forward {
+.controls .forward,
+.controls .backward {
   fill: #f1f1f1;
   width: 0.9rem;
 }
