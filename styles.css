@@ -2290,9 +2290,13 @@ textarea {
   display: none;
 }
 
+.bookings-socials {
+  gap: 1rem;
+}
+
 .bookings-socials .bi {
   color: var(--clr-neutral-100);
-  font-size: 2.5rem;
+  
 }
 
 .phone svg,
@@ -2314,10 +2318,9 @@ textarea {
   gap: 1.5em;
 }
 
-
-/*.phone .bi {
-  margin-left: -4px;
-}*/
+.phone svg {
+  margin-left: -2px;
+}
 
 .new-form input:required:focus,
 .new-form textarea:required:focus {
@@ -2373,10 +2376,11 @@ textarea {
     grid-column: 1 / 2;
     grid-row: 1 /2;
     justify-self: left;
+    gap: 1rem;
   }
 }
 
-@media (min-width: 55em) {
+@media (min-width: 66em) {
   .new-form .form-container {
    grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
@@ -2414,6 +2418,7 @@ textarea {
     grid-row: 2/3;
     justify-self: center;
     align-self: center;
+    gap: 1rem;
   }
   
 }
