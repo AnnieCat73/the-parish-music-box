@@ -2295,6 +2295,11 @@ textarea {
   font-size: 2.5rem;
 }
 
+.phone .telephone {
+  fill: var(--clr-neutral-100);
+  
+}
+
 .bookings-socials .email a {
   color: var(--clr-neutral-100);
   text-decoration: none;
@@ -2303,13 +2308,14 @@ textarea {
 .phone,
 .email a {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   gap: 1.5em;
 }
 
-.phone .bi {
+
+/*.phone .bi {
   margin-left: -4px;
-}
+}*/
 
 .new-form input:required:focus,
 .new-form textarea:required:focus {
