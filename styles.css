@@ -2295,9 +2295,9 @@ textarea {
   font-size: 2.5rem;
 }
 
-.phone .telephone {
+.phone svg {
   fill: var(--clr-neutral-100);
-  
+  opacity: 0.9;
 }
 
 .bookings-socials .email a {
