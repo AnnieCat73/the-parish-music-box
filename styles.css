@@ -2302,19 +2302,15 @@ textarea {
 .phone svg,
 .email svg,
 .contact-facebook {
-  
   opacity: 0.9;
 }
-
 .bookings-socials .email a {
   color: var(--clr-neutral-100);
   text-decoration: none;
 }
-
 .phone,
 .email a {
   display: flex;
-  /*align-items: center;*/
   gap: 1.5em;
 }
 
