@@ -48,70 +48,53 @@
   src: url("assets/fonts/ptserifcaption-italic-webfont.woff2") format("woff2"),
       url("assets/fonts/ptserifcaption-italic-webfont.woff") format("woff");
 }
-
-
-
 :root {
   --ff-sans: "Fira Sans", sans-serif;
   --ff-serif: "Playfair Display", serif;
   --ff-quote: 'PT Serif Caption', serif;
 
-  /* small screen font-sizes */
-
-  --fs-100: 0.875rem;/*14px*/
-  --fs-200: 0.938rem;/*15px*/
+  --fs-100: 0.875rem;
+  --fs-200: 0.938rem;
   --fs-300: 1rem;
-  --fs-400: 1.063rem;/*17px*/
-  --fs-450: 1.125rem;/*18px*/
+  --fs-400: 1.063rem;
+  --fs-450: 1.125rem;
   
   --fs-label: 0.875rem;
   --fs-label-input: 0.938rem;
   --fs-copy: 0.875rem;
   --fs-btn: 1rem;
-  --fs-quote: 1.188rem;/*19px -quote*/
+  --fs-quote: 1.188rem;
 
-  --fw-200: 300;/*light*/
-  --fw-300: 400;/*regular*/
-  --fw-500: 500; /*medium*/
-  --fw-600: 600;/*Semibold*/
-  --fw-700: 700;/*bold*/
+  --fw-200: 300;
+  --fw-300: 400;
+  --fw-500: 500; 
+  --fw-600: 600;
+  --fw-700: 700;
 
   --clr-neutral-100: #ffffff;
-  --clr-neutral-400: #d5d5d5;/*unselected nav item*/
+  --clr-neutral-400: #d5d5d5;
   --clr-neutral-500:  #2d2d2d;/*hr*/
-  
-  --clr-bg-300: #242424;/*dark*/
-  --clr-bg-400: #343434;/*#2b2b2b;/*light*/
-  --clr-bg-500: #404040;/*masterplay bg/playlist hover/band members bg*/
- 
-  --clr-bg-600: #1a1a1a;/*Form bg*/
-
+  --clr-bg-300: #242424;
+  --clr-bg-400: #343434;
+  --clr-bg-500: #404040;
+  --clr-bg-600: #1a1a1a;
   --clr-accent-300: #d61a24;
-  --clr-accent-400:#de1721; /*accent on lighter bg + NB ALL GRAPHICS on dark and light bg*/
-  --clr-accent-500: #ff8b7a;/*accent for playmaster volume up only*/
-
+  --clr-accent-400:#de1721; 
+  --clr-accent-500: #ff8b7a;
   --clr-hover-primary: #bd0b15;
   --clr-hover-secondary: #d61a24;
-
-  --br: 1rem;/**/
-
-  --box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.4);/*member and masterplay*/
-
-  
+  --br: 1rem;
+  --box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.4);
 
   /*Loading animation on hero section*/
   --hero-load-time: 800ms;
 }
-
 /*tablet*/
 @media (min-width: 36em) {
   :root {
     --fs-450: 1.2rem;
   }
 }
-
-
-
 /*desktop*/
 @media (min-width: 62em) {
   :root {
@@ -119,22 +102,17 @@
     --fs-quote: 1.25rem;/*quote*/
   }
 }
-
-
 /* reset */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 * {
   margin: 0;
   padding: 0;
   font: inherit;
 }
-
 h1,
 .h1,
 h2,
@@ -145,12 +123,9 @@ h4,
 .h4 {
   line-height: 1.2;
 }
-
 html {
   color-scheme: dark light;
 }
-
-
 body,
 h1,
 h2,
@@ -161,13 +136,11 @@ dd,
 figure {
   margin: 0;
 }
-
 ul[class],
 ol[class] {
   list-style: none;
   padding: 0;
 }
-
 img,
 picture,
 svg,
@@ -176,15 +149,12 @@ video {
   max-width: 100%;
   height: auto;
 }
-
-
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-
 body {
   line-height: 1.7;
   font-family: var(--ff-sans);
@@ -193,34 +163,27 @@ body {
   font-family: var(--ff-sans);
   color: var(--clr-neutral-100);
 }
-
-
 /*Typography*/
-
 h1,
 h2,
 h3 {
   font-family: var(--ff-serif);
   font-weight: var(--fw-700);
 }
-
 h1 {
   font-size: clamp(2.8rem, 2.1325rem + 3.3374vw, 6.2rem);
   line-height: 1;
   letter-spacing: -2px;
 }
-
 h1 span {font-size: clamp(3.3rem, 2.5367rem + 3.8164vw, 7.188rem);
   line-height: 1;
 }
-
 h2 {
   line-height: 1.2;
   letter-spacing: -2px;
   font-size: clamp(1.9rem, 1.7200rem + 0.9000vw, 2.8rem);
   position: relative;
 }
-
 h2::before {
   content: "";
   background-color: var(--clr-accent-400);
@@ -230,19 +193,16 @@ h2::before {
   left: 0;
   top: -32px;
 }
-
 h3 {
   font-size: clamp(1.4rem, 1.3050rem + 0.4750vw, 1.875rem);
   font-weight: var(--fw-600);
   line-height: 1.2;
   letter-spacing: -1.7px;
 }
-
 .text-400 {
   font-size: var(--fs-400);
   opacity: 0.9;
 }
-
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -251,98 +211,78 @@ h3 {
   text-decoration: none;
   color: var(--clr-neutral-100);
 }
-
 .btn-primary {
   background-color: var(--clr-accent-300);
   padding: 0.6em 3em 0.5em 3em;
   transition: all ease-in-out .3s;
 }
-
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: var(--clr-hover-primary);
 }
-
 .btn-secondary {
   background-color: transparent;
   border: 1px solid var(--clr-neutral-100);
   padding: 0.6em 2.3em 0.5em 2.3em;
   transition: all ease-in-out .3s;
 }
-
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: var(--clr-hover-secondary);
   border-color: var(--clr-hover-secondary);
 }
-
 @media (min-width: 22em ) {
   .btn {
     font-size: var(--fs-300);
   }
 }
- 
-@media (max-width: 24em) {
+ @media (max-width: 24em) {
   .btn-primary {
     padding: 0.8em 2em;
   }
-
   .btn-secondary {
     padding: 0.8em 1.3em;
   }
 }
-
-/*desktop*/
 @media (min-width: 62em) {
   .btn {
     font-size: var(--fs-400);
   }
 }
-
 /*General layout/Utiity classes*/
-
 section {
   padding: 7rem 0 6rem 0;
 }
-
 section:nth-child(1) {
   padding: 4.3rem 0 0 0;/*5.5rem 0 0 0;*/
 }
-
 section:nth-child(2) {
   padding: 0;
 }
-
 section:nth-child(3) {
   padding: 1.5rem 0 6rem 0;
 }
-
 .container {
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
-
 .container-hero {
   max-width: 105rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
-
-.flow-content > * + * { /*about text*/
+.flow-content > * + * { 
   margin-top: 1rem;
 }
-
 .split {
   display: flex;
   align-items: center;
 }
-
 .split-v {
   display: flex;
   flex-direction: column;
 }
-
 .p-upper {
   font-size: var(--fs-200);
   text-transform: uppercase;
@@ -367,47 +307,37 @@ section:nth-child(3) {
 }
 
 /*tablet*/
-
 @media (min-width: 36em) {
   section,
   section:nth-child(3) {
     padding: 7.5rem 0;
   }
-
   section:nth-child(2) {
     padding: 2.3rem 0;
   }
-
   section:nth-of-type(8) {
     padding-top: 5.5rem;
   }
-  
-  .flow-content > * + * { /*about text*/
+  .flow-content > * + * { 
     margin-top: 1.5rem;
   }
 }
-
 /*desktop*/
-
 @media (min-width: 62em) {
   section,
   section:nth-child(3) {
     padding: 9.25rem 0;
   }
-
   section:nth-of-type(8) {
     padding-top: 7.5rem;
   }
 }
-
 @media (min-width: 86em) {
   section:nth-child(1) {
     padding: 8rem 0 4rem 0;
   }
 }
-
-/*Header*/
-
+/*HEADER*/
 .header {
   background-color: var(--clr-bg-400);
   justify-content: space-between;
@@ -420,33 +350,26 @@ section:nth-child(3) {
   transition: 0.5s;
   z-index: 10;
 }
-
 .nav-left {
   gap: 2em;
 }
-
 .menu-links {
   display: none;
   gap: 1em;
 }
-
 .menu {
   display: none;
 }
-
 .logo {
   width: 2.25rem;
   border-radius: 2px;
   transition: all ease-in-out .3s;
 }
-
 .logo:hover,
 .logo:focus {
   opacity: 0.7;
 }
-
 /*mobile/tablet header*/
-
 .open-nav{
   border: 0;
   background: 0;
@@ -457,7 +380,6 @@ section:nth-child(3) {
   transition: all ease-in-out .3s;
   opacity: 0.8;
 }
-
 .menu-inside {
   position: fixed;
   background: var(--clr-bg-300);
@@ -472,7 +394,6 @@ section:nth-child(3) {
   padding: 0 2rem;
   z-index: 7;
 }
-
 .close-nav {
   border: 0;
   background: 0;
@@ -484,14 +405,12 @@ section:nth-child(3) {
   opacity: 0.8;
   transition: all ease-in-out .5s;
 }
-
 .close-nav:hover,
 .close-nav:focus,
 .open-nav:hover,
 .open-nav:focus {
   opacity: 1;
 }
-
 .list-inside li {
   padding: 1rem 0 0 0;
   opacity: 0.8;
@@ -507,21 +426,16 @@ section:nth-child(3) {
   text-decoration: none;
   text-transform: uppercase;
 }
-
 .nav-line {
   border: none;
   height: 1.5px;
   background-color: var(--clr-neutral-500);
   margin-top: 1em;
 }
-
 /*javascript class to toggle*/
 .navigation-open {
   transform: translateX(-100%);
 }
-
-/*tablet*/
-
 @media (min-width: 36em) {
   .nav-link {
     font-size: var(--fs-400);
@@ -531,9 +445,6 @@ section:nth-child(3) {
     padding: 1.5rem 0 0 0;
   }
 }
-
-/*desktop*/
-
 @media (min-width: 62em) {
   header {
     padding: 1.5rem 3rem;
@@ -541,11 +452,9 @@ section:nth-child(3) {
   .open-nav {
     display: none;
   }
-
   .nav-left {
     gap: 3em;
   }
-
   .menu-links {
     display: flex;
     gap: 1.5em;
@@ -558,15 +467,12 @@ section:nth-child(3) {
     opacity: 1;
     transition: all ease-in-out .3s;
   }
-  
   .menu {
     display: block;
   }
-
   .menu-list {
     gap: 1.5em;
   }
-
   .nav-item {
     color: var(--clr-neutral-100);
     opacity: 0.6;
@@ -577,12 +483,10 @@ section:nth-child(3) {
     transform: scaleX(0);
     transition: all ease-in-out .3s;
   }
-
   .nav-item:hover,
   .nav-item:focus {
     opacity: 1;
   }
-
   .nav-item::before {
     content: "";
     position: absolute;
@@ -593,13 +497,12 @@ section:nth-child(3) {
     background-color: var(--clr-accent-400);
     transition: width 0.25s ease-out;
   }
-
   .nav-item:hover::before {
     width: 100%;
   }
 }
 
-/*Hero section*/
+/*HERO SECTION*/
 
 .hero {
   background-color: var(--clr-bg-300);
