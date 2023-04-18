@@ -817,35 +817,28 @@ h1 {
     box-shadow: inset 0px 0px 3px var(--clr-accent-300);
   }
 }
-
-/*About*/
-
+/*ABOUT*/
 .about {
   background-color: var(--clr-bg-300);
 }
-
 .about-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   gap: 2em;
 }
-
 .about-tablet,
 .about-desktop {
   display:  none;
 }
-
 .about-img {
   display: flex;
   flex-direction: column-reverse;
   gap: 2em;
 }
-
 .about-img img {
   object-fit: cover;
 }
-
 .about-img figcaption {
   font-family: var(--ff-quote);
   font-size: var(--fs-450);
@@ -856,7 +849,6 @@ h1 {
   margin: 0 auto;
   opacity: 0.9;
 }
-
 .about-img figcaption::before {
   content: "";
   background-image: url(images/quote.svg);
@@ -867,7 +859,6 @@ h1 {
   top: -2px;
   left: -36px;
 }
-
 .about-img figcaption p {
   font-family: var(--ff-sans);
   font-size: var(--fs-100);
@@ -876,113 +867,91 @@ h1 {
   margin-left: -20px;
   text-transform: uppercase;
 }
-
-
 @media (min-width: 36em) {
   .about-tablet {
   display:  block;
-  
   }
   .about-mobile,
   .about-desktop {
     display:  none;
   }
-
   .about-container {
     gap: 3em;
   }
-
   .about-img {
     flex-direction: column;
     gap: 3em;
   }
-  
   .about-img figcaption {
     max-width: 85%;
     margin: 0 auto;
   }
 }
-
 @media (min-width: 39.125em) and (max-width: 49.9em) {
   .about-img img {
     max-width: 75%;
     margin: 0 auto;
   }
 }
-
 @media (min-width: 50em)  and (max-width:76.25em) {
   .about-desktop {
     display:  block;
   }
-
   .about-mobile,
   .about-tablet {
     display:  none;
   }
-
   .about-container {
     /*grid-template-columns: 26rem 29.930rem;*/
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     justify-content: space-between;
   }
-
   .about-img {
     order: 1;
     align-self: center;
     /*margin-top: -1.875rem;*/
     /*margin-left: 1.25rem;*/
   }
-
   .about-desktop {
     order: 5;
   }
-
   .about-img img {
     max-width: 100%;
     height: 24rem;
   }
 }
-
 @media (min-width: 76.26em) {
   .about-desktop {
     display:  block;
   }
-
   .about-mobile,
   .about-tablet {
     display:  none;
   }
-
   .about-container {
     grid-template-columns: 43rem 29.930rem;
     grid-template-rows: auto;
     justify-content: space-between;
   }
-
   .about figure {
     order: 1;
     gap: 2em;
     margin-top: -1.875rem;
     /*margin-left: 2.8rem;*/
   }
-
   figure img {
     max-height: 100%;
   }
-
   .about-desktop {
     order: 5;
   }
-
   figure figcaption {
     max-width: unset;
   }
-
   .about-img figcaption {
     margin-left: 1.5em;
   }
-
   figure figcaption::before {
     left: -50px;
   }
