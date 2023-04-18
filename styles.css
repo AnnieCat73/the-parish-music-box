@@ -665,26 +665,19 @@ h1 {
     animation: hero-img-load var(--hero-load-time) ease-in-out 400ms;
   }
 }
-
-
-/*Masterplay*/
-
-
+/*MASTERPLAY*/
 .master-play {
   display: none;
 }
-
 @media (min-width: 36em) {
   .masterplay > h2 {
     font-size: var(--fs-200);
     font-weight: var(--fw-100);
   }
-  
   .masterplay {
     background-color: var(--clr-bg-400);
     padding: 2.3rem 0;
   }
-  
   .master-play {
     display: flex;
     align-items: center;
@@ -692,16 +685,13 @@ h1 {
     color: var(--clr-neutral-100);
     width: 100%;
   }
-  
   .master-title {
     display: flex;
     flex-direction: column;
   }
-  
   .master-title p {
     font-size: var(--fs-200);
   }
-  
   .master-play .subtitle{
     font-size: var(--fs-100);
     opacity: 0.7;
@@ -719,7 +709,6 @@ h1 {
     padding: 1px 5px 0px 6px;
     transition: .3s linear;
   }
-  
   .master-play .middle-controls {
     display: flex;
     align-items: center;
@@ -730,14 +719,12 @@ h1 {
     color: var(--clr-neutral-100);
     font-size: 0.688rem;
   }
- 
   .master-play .middle-controls .bar {
     position: relative;
     width: 70%;
     height: 2px;
     background: rgb(255, 255, 255, 0.3);
   }
-
   .master-play .middle-controls .bar .bar2 {
     position: absolute;
     background: var(--clr-accent-300);
@@ -746,7 +733,6 @@ h1 {
     top: 0;
     transition: 1s linear;
   }
-
   .master-play .bar .dot {
     position: absolute;
     width: 5px;
@@ -757,7 +743,6 @@ h1 {
     top: -1px;
     transition: 1s linear;
   }
-
   .master-play .bar .dot::before {
     content: '';
     position: absolute;
@@ -769,7 +754,6 @@ h1 {
     top: -5px;
     box-shadow: inset 0px 0px 3px var(--clr-accent-300);
   }
-
   .master-play .middle-controls .bar input {
     position: absolute;
     width: 100%;
@@ -793,7 +777,6 @@ h1 {
     top: -10px;
     left: -30px;
   }
-  
   .master-play .vol input {
     position: absolute;
     width: 100%;
@@ -804,7 +787,6 @@ h1 {
     transition: 1s linear;
     opacity: 0;
   }
-  
   .master-play .vol .vol-bar {
     position: absolute;
     background: var(--clr-accent-300);
@@ -813,7 +795,6 @@ h1 {
     top: 0;
     transition: 1s linear;
   }
-
   .master-play .vol .dot {
     position: absolute;
     width: 5px;
@@ -824,7 +805,6 @@ h1 {
     top: -1px;
     transition: 1s linear;
   }
-
   .master-play .vol .dot::before {
     content: '';
     position: absolute;
