@@ -1055,7 +1055,6 @@ h1 {
 
 
 /*music player*/
-
 .player {
   background-color: var(--clr-bg-500);
   display: grid;
@@ -1065,27 +1064,23 @@ h1 {
   padding: 1.5rem 3.25rem;
   border-radius: 6px;
 }
-
 .track-playing {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: .5em;
 }
-
 .record {
   width: 3.5rem;
   border-radius: 50%;
   margin-left: .3em
 }
-
 .record-animation {
   animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -1094,13 +1089,11 @@ h1 {
     transform: rotate(360deg);
   }
 }
-
 .controls-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .slidecontainer {
   display: flex;
   width: 100%;
@@ -1112,7 +1105,6 @@ h1 {
   color: var(--clr-neutral-100);
   font-size: 1.2rem;
 }
-
 .slidecontainer .down {
   fill: #f1f1f1;
   width: 0.9rem;
@@ -1121,7 +1113,6 @@ h1 {
   fill: #f1f1f1;
   width: 1.5rem;
 }
-
 .controls-slider {
   -webkit-appearance: none;
   cursor: pointer;
@@ -1135,30 +1126,25 @@ h1 {
   width: 50%;
   color: #f1f1f1;
 }
-
 .controls-slider:hover {
   opacity: 0.8;
 }
-
 .controls {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-
 .controls > button {
   outline: none;
   border: none;
   cursor: pointer;
   background: none;
 }
-
 .controls > button > i {
   font-size: 1.2rem;
   color: #f1f1f1;
 }
-
 .controls .play {
   fill: #f1f1f1;
   width: 1.8rem;
@@ -1168,18 +1154,15 @@ h1 {
   fill: #f1f1f1;
   width: 0.9rem;
 }
-
 .controls .play:hover,
 .controls .forward:hover {
   opacity: 0.8;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .play-pause > i {
   font-size: 1.8rem !important;
 }
-
 .play-pause > i:hover,
 .controls > button > i:hover {
   opacity: 0.8;
