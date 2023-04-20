@@ -1171,14 +1171,12 @@ h1 {
 }
 
 /*Albums*/
-
 .streaming .albums-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   /*gap: 1em;*/
 }
-
 .vinyl {
   display: grid;
   grid-template-columns: 1fr;
@@ -1186,37 +1184,31 @@ h1 {
   gap: 2em;
   justify-items: center;
 }
-
 .albums-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   gap: 2em;
 }
-
 .albums-wrapper a,
 .singles a  {
   text-decoration: none;
   color: var(--clr-neutral-100);
 }
-
 .vinyl h3 {
   justify-self: left;
 }
-
 .album img {
   width: 10.938rem;
   height: 10.313rem;
   padding-bottom: 0.5rem;
   aspect-ratio: 1 /1;
 }
-
 .album figcaption {
   font-size: var(--fs-100);
   letter-spacing: 0.02em;
   opacity: 0.7;
 }
-
 .singles {
   display: none;
 }
