@@ -1158,11 +1158,11 @@ h1 {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.play-pause > i {
-  font-size: 1.8rem !important;
+.play-pause{
+  display: flex;
 }
-.play-pause > i:hover,
-.controls > button > i:hover {
+.play-pause > svg:hover,
+.controls > button > svg:hover {
   opacity: 0.8;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -1393,25 +1393,20 @@ h1 {
     margin-left: 0.6rem;
   }
 }
-
-
 @media (min-width: 55em)  {
   .streaming .albums-container {
     grid-template-columns: auto auto;
   }
-
   .albums-wrapper {
     display: grid;
     grid-template-columns: 16rem 16rem;
     grid-column: 1 /2;
     gap: 1.5em;
   }
-
   .vinyl {
     grid-column : 1 / 2;
     justify-items: unset;
   }
-
   .singles {
     display: grid;
     grid-column: 2 /3;
@@ -1420,44 +1415,35 @@ h1 {
     gap: 2.5em;
   }
 }
-
 @media (min-width: 61em) {
   .stream-icons {
     padding-top: 0.8em;
   }
-
   .player-container {
     display: grid;
     grid-template-columns: 1fr 60rem 1fr;
     grid-template-rows: auto;
   }
-
   .player {
     grid-column: 2 /3;
     padding: 2rem 3.25rem;
   }
-
   .albums-wrapper {
     gap: 4em;
   }
-
   .singles {
     gap: 2.3em;
   }
-
   .player .record {
     position: absolute;
     width: 7rem;
     top: -42px;
   }
-
   .player .current-song {
     margin-left: 1rem;
   }
 }
-
 /*Reviews & Comments*/
-
 .reviews {
   background-color: var(--clr-bg-400);
 }
