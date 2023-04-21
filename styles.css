@@ -1052,8 +1052,6 @@ h1 {
 .playlist ul li.active {
   font-weight: bold;
 }
-
-
 /*music player*/
 .player {
   background-color: var(--clr-bg-500);
@@ -1169,7 +1167,6 @@ h1 {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 /*Albums*/
 .streaming .albums-container {
   display: grid;
@@ -1212,19 +1209,14 @@ h1 {
 .singles {
   display: none;
 }
-
-
 /*Videos*/
-
 .videos {
   background-color: var(--clr-bg-300);
 }
-
 .videos h3 {
   padding-bottom: 2em;
   position: relative;
 }
-
 .videos h3::before {
   content: "";
   background-color: var(--clr-accent-400);
@@ -1234,13 +1226,11 @@ h1 {
   left: 0;
   top: -32px;
 }
-
 .videos-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3em;
 }
-
 .iframe-container {
   aspect-ratio: 16/9;
   position: relative;
@@ -1248,7 +1238,6 @@ h1 {
   padding-bottom: 56.25%;
   height: 0;
 }
-
 .iframe-container iframe {
   position: absolute;
   width: 100%;
@@ -1256,188 +1245,150 @@ h1 {
   left: 0;
   height: 100%;
 }
-
-
 @media (min-width: 20em) and (max-width: 20.375em) {
   .playlist .song-list li {
     grid-template-columns: auto auto auto auto;
   }
 }
-
 @media (min-width: 20em) and (max-width: 32em) {
   .track-playing {
     flex-direction: row;
     gap: 1em;
     align-items: center;
   }
-  
   .controls {
     padding-top: 1em;
   }
 }
-
 @media (min-width: 27em) {
   .album img {
     width: 13rem;
     height: 13rem;
   }
 }
-
 @media (min-width: 30em) and (max-width: 54.75em) {
   .albums-wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    
   }
-  
 }
-
 @media (min-width: 28em) {
   .player {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
-
   .track-playing {
     flex-direction: column;
   }
-
   .record {
     width: 5rem;
     margin-left: -.2em
   }
 }
-
 @media (min-width: 37em) {
   .streaming-heading {
     align-items: unset;
   }
-
   .stream-icons {
     padding-top: 1em;
   }
 }
-
 @media (min-width: 36em) {
   .playlist .song-list {
     grid-template-columns: 1fr 1fr;
     gap: 1em;
   }
-
   .playlist .song-list li:nth-child(2) {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
-
   .streaming-heading {
     grid-column: 1 / -1;
     grid-row: 1 /2;
     flex-direction: row;
     gap: 5rem;
   }
-
   .stream-icons {
     padding-top: 0.5em;
   }
-
   .playlist {
     grid-column: 1 / -1;
     grid-row: 2 /3;
   }
-
   .playlist-heading {
     padding-bottom: 2.5em;
   }
-
   .player-container {
     grid-column: 1 / -1;
     grid-row: 3 /4;
   }
-  
   .videos {
     grid-column: 1/ -1;
   }
-
   .videos-container {
     gap: 3em;
   }
-
   .videos h3 {
     padding-bottom: 2.5em;
   }
-
   .album img {
     width: 15rem;
     height: 15rem;
   }
-  
   .slider { 
     width: 50%;
   }
-
   .controls {
     width: 50%;
     align-self: center;
   }
-
   .track-playing {
     justify-self: center;
   }
-
   .albums {
     grid-column: 1 / -1;
     grid-row: 4 /5;
     justify-content: end;
     margin-top: 2.5rem;
   }
-
   .albums-wrapper {
     gap: 4em; 
   }
-
   .streaming-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
     gap: 4.5rem;
   }
-
   .vinyl {
     gap: 2.5em;
   }
 }
-
 @media (min-width: 48em)  {
   .videos-container {
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
   }
 }
-
 @media (min-width: 50em)  {
   .playlist .song-list {
     gap: 0 4em;
   }
-
   .player-container {
     margin-top: 2rem;
   }
-    
   .player {
     position: relative;
     grid-template-rows: 4.5rem;
   } 
-
   .player .track-playing {
     flex-direction: row;
     align-self: flex-end;
-   
   }
   .player .record {
     position: absolute;
     width: 6.5rem;
     top: -40px;
   }
-
   .player .current-song {
     margin-left: 0.6rem;
   }
