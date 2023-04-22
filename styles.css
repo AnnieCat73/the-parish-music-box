@@ -1160,6 +1160,7 @@ h1 {
 }
 .play-pause{
   display: flex;
+  align-items: center;
 }
 .play-pause > svg:hover,
 .controls > button > svg:hover {
