@@ -1265,6 +1265,7 @@ h1 {
   .album img {
     width: 13rem;
     height: 13rem;
+    aspect-ratio: 1/1;
   }
 }
 @media (min-width: 30em) and (max-width: 54.75em) {
