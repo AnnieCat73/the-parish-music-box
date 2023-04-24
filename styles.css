@@ -1536,29 +1536,22 @@ h1 {
     flex-basis: 50%;
   }
 }
-
-
 /*Photos & Band Members*/
-
 .personal-gallery {
   background-color: var(--clr-bg-300);
 }
-
 .personal-gallery-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 7em;
 }
-
 .personal-gallery .heading-desktop {
   display: none;
 }
-
 .photos, 
 .members {
   gap: 2.5em
 }
-
 .members-container {
   background-color: var(--clr-bg-400);
   display: flex;
@@ -1567,7 +1560,6 @@ h1 {
   padding: 2em;
   width: 100%;
 }
-
 .personal-gallery .instrument {
   opacity: 0.7;
 }
