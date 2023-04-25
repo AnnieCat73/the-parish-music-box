@@ -1563,9 +1563,7 @@ h1 {
 .personal-gallery .instrument {
   opacity: 0.7;
 }
-
 /*Carousel*/
-
 .photos,
 .members {
   display: grid;
@@ -1573,7 +1571,6 @@ h1 {
   grid-template-rows: auto auto;
   gap: 2.5em
 }
-
 .slider {
   width: 100%;
   /*max-width: 800px;*/
@@ -1583,7 +1580,6 @@ h1 {
   overflow: hidden; 
   margin:0;
 }
-
 .slide {
   width: 100%;
   /*max-width: 800px;*/
@@ -1592,12 +1588,10 @@ h1 {
   position: absolute;
   transition: all 0.5s;
 }
-
 .slide img {
   width: 100%;
   height: auto;
 }
-
 .slider-btn {
   position: absolute;
   width: 40px;
@@ -1610,7 +1604,6 @@ h1 {
   background-color: var(--clr-bg-400);
   font-size: 18px;
 }
-
 .slider-btn:active {
   transform: scale(1.1);
 }
@@ -1618,12 +1611,10 @@ h1 {
   top: 45%;
   left: 2%;
 }
-
 .btn-next {
   top: 45%;
   right: 2%;
 }
-
 .btn-next .bi,
 .btn-prev .bi {
   position: relative;
@@ -1631,31 +1622,25 @@ h1 {
   bottom: 3.5px;
   right: -1px;
 }
-
 .btn-prev .bi {
   right: 1px;
 }
-
 @media (min-width:26.875em) {
   .slider {
     height: 16rem;
   }
 } 
-
 @media (min-width: 40em) {
   .personal-gallery-container {
     grid-template-columns: 1.5fr 1fr;
     gap: 2em;
   }
-
   .photos {
     gap: 3em;
   }
-
   .members {
     gap: 3em;
   }
-
   .slider {
     width: 100%;
     /*max-width: 800px;*/
@@ -1665,7 +1650,6 @@ h1 {
     overflow: hidden; /* <===  */
     margin:0;
   }
-  
   .slide {
     width: 100%;
     /*max-width: 800px;*/
@@ -1673,12 +1657,10 @@ h1 {
     /*height: 350px;*/
     position: absolute;
     transition: all 0.5s;
-   
   }
   .slide-img {
     object-fit: contain;
   }
-  
   .members-container {
     gap: 1em;
   }
@@ -1689,39 +1671,31 @@ h1 {
   .members h2 {
     display: none;
   }
-
   .photos .heading-desktop {
     display: grid;
   }
-
   .photos {
     grid-template-rows: auto 25rem;
     gap: 3.5em;
   }
-
   .personal-gallery-container {
     grid-template-columns: 2.5fr 1fr;
     gap: 2em;
   }
-
   .slider {
     width: 100%;
     height: 100%;
     border-radius: 0;
   }
-
   .slide img {
     object-fit: cover;
   }
-
   .wall-img {
     object-position: 20% top;
   }
-
   .members {
     grid-template-rows: auto 25rem;
   }
-
   .members-container {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
