@@ -1793,31 +1793,24 @@ h1 {
     grid-row: 3 /5;
   }
 }
-
 /*CONTACT/New Form*/
-
 .new-form {
   background-color: var(--clr-bg-300);
 }
-
 .new-form .form-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5em;
 }
-
 /*form*/
-
 .new-form form {
   display: grid;
   grid-template-rows: repeat(4, min-content);
   gap: 1em;
 }
-
 .form-heading {
   gap: 0.4em;
 }
-
 .new-form input,
 .new-form textarea { 
   background-color: var(--clr-bg-600);
@@ -1829,20 +1822,17 @@ h1 {
   outline: none;
   color: var(--clr-neutral-100);
 }
-
 .new-form input::placeholder,
 .new-form textarea::placeholder {
  font-size: var(--fs-400);
  color: #939393;
 }
-
 .new-form input:focus,
 .new-form textarea:focus {
   outline-color: transparent;
   box-shadow: 0 0 0 2px var(--clr-bg-500);
   background-color: #2d2d2d;
 }
-
 .new-form label {
   display: block;
   font-size: var(--fs-200);
@@ -1858,7 +1848,6 @@ textarea {
   font-size: var(--fs-400);
   resize: none;
 }
-
 .submit-btn {
   background-color: var(--clr-accent-300);
   border: 0;
@@ -1868,7 +1857,6 @@ textarea {
   justify-self: start;
   transition: all ease-in-out .3s;
 }
-
 .submit-btn:hover,
 .submit-btn:focus {
   background-color: var(--clr-hover-primary);
