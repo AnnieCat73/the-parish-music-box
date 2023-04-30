@@ -1971,24 +1971,19 @@ textarea {
     gap: 1rem;
   }
 }
-
-/*Footer*/
-
+/*FOOTER*/
 .footer {
   background-color: var(--clr-bg-400);
   justify-content: center;
   padding: 2rem 1.5rem;
 }
-
 .footer-text {
   text-align: center;
   font-size: var(--fs-200);
 }
-
 .copy {
   align-items: center;
 }
-
 @media (min-width: 36em)  {
   .footer {
     padding: 3rem 1.5rem;
