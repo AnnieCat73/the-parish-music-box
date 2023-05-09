@@ -52,25 +52,21 @@
   --ff-sans: "Fira Sans", sans-serif;
   --ff-serif: "Playfair Display", serif;
   --ff-quote: 'PT Serif Caption', serif;
-
   --fs-100: 0.875rem;
   --fs-200: 0.938rem;
   --fs-300: 1rem;
   --fs-400: 1.063rem;
   --fs-450: 1.125rem;
-  
   --fs-label: 0.875rem;
   --fs-label-input: 0.938rem;
   --fs-copy: 0.875rem;
   --fs-btn: 1rem;
   --fs-quote: 1.188rem;
-
   --fw-200: 300;
   --fw-300: 400;
   --fw-500: 500; 
   --fw-600: 600;
   --fw-700: 700;
-
   --clr-neutral-100: #ffffff;
   --clr-neutral-400: #d5d5d5;
   --clr-neutral-500:  #2d2d2d;/*hr*/
@@ -85,7 +81,6 @@
   --clr-hover-secondary: #d61a24;
   --br: 1rem;
   --box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.4);
-
   /*Loading animation on hero section*/
   --hero-load-time: 800ms;
 }
