@@ -431,7 +431,6 @@ section:nth-child(3) {
   .nav-link {
     font-size: var(--fs-400);
   }
-
   .list-inside li {
     padding: 1.5rem 0 0 0;
   }
