@@ -897,8 +897,6 @@ h1 {
   .about-img {
     order: 1;
     align-self: center;
-    /*margin-top: -1.875rem;*/
-    /*margin-left: 1.25rem;*/
   }
   .about-desktop {
     order: 5;
