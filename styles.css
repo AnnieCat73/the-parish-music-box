@@ -1157,7 +1157,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  /*gap: 1em;*/
+  
 }
 .vinyl {
   display: grid;
